@@ -66,8 +66,8 @@ if __name__ == '__main__':
     numberOfFile = 0
 
     for file in Folder().iterateCSVThroughFolder():
-        # numberOfFile += 1
-        shift = -numberOfFile
+        numberOfFile += 1
+        # shift = -numberOfFile
 
         # if (numberOfFile % 4) == 1:
         #     shift = 3
@@ -87,6 +87,13 @@ if __name__ == '__main__':
         # else:
         #     continue
 
+        if numberOfFile in (1, 2):
+            shift = 0
+        elif numberOfFile in (4, 3):
+            shift = 1
+        else:
+            continue
+
 
         CSV = CSVFile(file[0], file[1])
         noExtension, theExposure = CSV.getLabParams()
@@ -100,14 +107,6 @@ if __name__ == '__main__':
 
 plt.xlabel('Time [s]')
 plt.ylabel('Intensity (normalised)')
-plt.ylim((0, 1.1))
+# plt.ylim((0, 1.1))
 plt.legend()
 plt.show()
-
-        # if (numberOfFile % 2) == 0:
-        #     plt.xlabel('Time [s]')
-        #     plt.ylabel('Intensity (normalised)')
-        #     plt.legend()
-        #     plt.show()
-        # else:
-        #     continue

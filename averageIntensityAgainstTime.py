@@ -39,7 +39,7 @@ class CSVFile:
     def getLabParams(self):
         name = self.name.split('.')[0]
         exposure, during, acquisition, what = name.split('-')[0].split(' ')
-        exposure = float(exposure.replace('s', ''))
+        exposure = float(exposure.replace('s', '').replace('m', ''))
         return name, exposure
 
     def getData(self):
@@ -59,18 +59,26 @@ class CSVFile:
 
 
 if __name__ == '__main__':
+    numberOfFile = 0
+
     for file in Folder().iterateCSVThroughFolder():
+        numberOfFile += 1
+
         CSV = CSVFile(file[0], file[1])
         noExtension, theExposure = CSV.getLabParams()
         xdata, ydata, deviationdata = CSV.getData()
 
-        x = [i * theExposure for i in xdata]
-        y = [i/max(ydata) for i in ydata]
+        x = [i * theExposure + numberOfFile for i in xdata]
+        y = [i/max(ydata) + numberOfFile for i in ydata]
         dev = round(numpy.mean([i/max(ydata) for i in deviationdata]), 2)
 
         plt.plot(x, y, label='%s (std dev = %s)' % (noExtension, dev))
 
-    plt.xlabel('Time [s]')
-    plt.ylabel('Intensity (normalised)')
-    plt.legend()
-    plt.show()
+
+        # if (numberOfFile % 2) == 0:
+        #     plt.xlabel('Time [s]')
+        #     plt.ylabel('Intensity (normalised)')
+        #     plt.legend()
+        #     plt.show()
+        # else:
+        #     continue

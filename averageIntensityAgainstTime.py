@@ -63,37 +63,48 @@ class CSVFile:
 
 
 if __name__ == '__main__':
+
+    inter = float(input("1:A-B-A-B \n2:A-A-B-B \n3:A-B-C-D \n4:A-A-A-A \nChoose an option --> ").strip())
+
     numberOfFile = 0
 
     for file in Folder().iterateCSVThroughFolder():
         numberOfFile += 1
-        # shift = -numberOfFile
 
-        # if (numberOfFile % 4) == 1:
-        #     shift = 3
-        # elif (numberOfFile % 4) == 2:
-        #     shift = 2
-        # elif (numberOfFile % 4) == 3:
-        #     shift = 1
-        # elif (numberOfFile % 4) == 0:
-        #     shift = 0
-        # else:
-        #     continue
+        if inter == 3:
+            if (numberOfFile % 4) == 1:
+                shift = 3
+            elif (numberOfFile % 4) == 2:
+                shift = 2
+            elif (numberOfFile % 4) == 3:
+                shift = 1
+            elif (numberOfFile % 4) == 0:
+                shift = 0
+            else:
+                continue
 
-        # if (numberOfFile % 2) == 1:
-        #     shift = 1
-        # elif (numberOfFile % 2) == 0:
-        #     shift = 0
-        # else:
-        #     continue
+        elif inter == 2:
+            if (numberOfFile % 2) == 1:
+                shift = 1
+            elif (numberOfFile % 2) == 0:
+                shift = 0
+            else:
+                continue
 
-        if numberOfFile in (1, 2):
+        elif inter == 1:
+            if numberOfFile in (1, 2):
+                shift = 0
+            elif numberOfFile in (4, 3):
+                shift = 1
+            else:
+                continue
+
+        elif inter == 4:
             shift = 0
-        elif numberOfFile in (4, 3):
-            shift = 1
-        else:
-            continue
 
+        else:
+            print("The input was not recognised.")
+            continue
 
         CSV = CSVFile(file[0], file[1])
         noExtension, theExposure = CSV.getLabParams()
@@ -105,8 +116,16 @@ if __name__ == '__main__':
 
         plt.plot(x, y, label='%s (std dev = %s)' % (noExtension, dev))
 
-plt.xlabel('Time [s]')
-plt.ylabel('Intensity (normalised)')
-# plt.ylim((0, 1.1))
-plt.legend()
-plt.show()
+    if inter in (1, 2):
+        plt.ylim((0, 2.1))
+    elif inter == 2:
+        plt.ylim((0, 4.1))
+    elif inter == 4:
+        plt.ylim((0, 1.1))
+    else:
+        pass
+
+    plt.xlabel('Time [s]')
+    plt.ylabel('Intensity (normalised)')
+    plt.legend()
+    plt.show()

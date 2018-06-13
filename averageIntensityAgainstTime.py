@@ -3,6 +3,7 @@ from matplotlib import pyplot as plt
 import tkinter as tk
 from tkinter import filedialog
 import os
+import statistics
 import numpy
 
 
@@ -33,9 +34,10 @@ class CSVFile:
     def read(self):
         with open(os.path.join(self.directory, self.name)) as file:
             reader = csv.reader(file, delimiter=',')
+            listOfRows = []
             for row in reader:
-                print(row)
-                # yield row
+                listOfRows.append(row)
+            return listOfRows
 
     def getLabParams(self):
         name = self.name.split('.')[0]
@@ -48,92 +50,86 @@ class CSVFile:
         return name, exposure
 
     def getData(self):
-        # number = []
-        # mean = []
-        for row in self.read():
-            print(row)
-        #     nbOfColumns = len(row)
-        #     nbOfPoints = round(nbOfColumns/3)
-        #
-        #     try:
-        #         float(row[0])
-        #     except ValueError:
-        #         continue
-        #     else:
-        #         number.append(float(row[0]))
-        #         mean.append(float(row[1]))
-        # return number, mean, deviation
+
+        listOfRows = self.read()
+        nbOfPoints = len(listOfRows[0]) - 1
+
+        time = []
+        allData = []
+        for i in range(nbOfPoints):
+            allData.append([])
+
+        nbOfRow = -1
+        for row in listOfRows:
+            try:
+                float(row[0])
+            except ValueError:
+                pass
+            else:
+                time.append(float(row[0]))
+
+                nbOfRow += 1
+                for i in range(nbOfPoints):
+                    allData[i].append(float(row[i + 1]))
+
+        return time, allData
 
 
-# if __name__ == '__main__':
-#
-#     inter = float(input("1:A-B-A-B \n2:A-A-B-B \n3:A-B-C-D \n4:A-A-A-A \nChoose an option --> ").strip())
-#
-#     numberOfFile = 0
-#
-#     for file in Folder().iterateCSVThroughFolder():
-#         numberOfFile += 1
-#
-#         if inter == 3:
-#             if (numberOfFile % 4) == 1:
-#                 shift = 3
-#             elif (numberOfFile % 4) == 2:
-#                 shift = 2
-#             elif (numberOfFile % 4) == 3:
-#                 shift = 1
-#             elif (numberOfFile % 4) == 0:
-#                 shift = 0
-#             else:
-#                 continue
-#
-#         elif inter == 2:
-#             if (numberOfFile % 2) == 1:
-#                 shift = 1
-#             elif (numberOfFile % 2) == 0:
-#                 shift = 0
-#             else:
-#                 continue
-#
-#         elif inter == 1:
-#             if numberOfFile in (1, 2):
-#                 shift = 0
-#             elif numberOfFile in (4, 3):
-#                 shift = 1
-#             else:
-#                 continue
-#
-#         elif inter == 4:
-#             shift = 0
-#
-#         else:
-#             print("The input was not recognised.")
-#             continue
-#
-#         CSV = CSVFile(file[0], file[1])
-#         noExtension, theExposure = CSV.getLabParams()
-#         xdata, ydata, deviationdata = CSV.getData()
-#
-#         x = [i * theExposure for i in xdata]
-#         y = [i/max(ydata) + shift for i in ydata]
-#         dev = round(numpy.mean([i/max(ydata) for i in deviationdata]), 2)
-#
-#         plt.plot(x, y, label='%s (std dev = %s)' % (noExtension, dev))
-#
-#     if inter in (1, 2):
-#         plt.ylim((0, 2.1))
-#     elif inter == 2:
-#         plt.ylim((0, 4.1))
-#     elif inter == 4:
-#         plt.ylim((0, 1.1))
-#     else:
-#         pass
-#
-#     plt.xlabel('Time [s]')
-#     plt.ylabel('Intensity (normalised)')
-#     plt.legend()
-#     plt.show()
 
 
-file = CSVFile(r"C:\Users\Ariane Gouin\Documents\ULaval\2018_Ete\cervo\P3_francois\20180612\0results", '200ms during 1min speckles-SPC.csv')
-file.read()
+
+
+if __name__ == '__main__':
+
+    option = float(input('1: graph, or 2: std dev --> ').strip())
+
+    if option == 1:
+
+        # shift = -1
+        shift = 0
+
+        for file in Folder().iterateCSVThroughFolder():
+            # shift += 1
+
+            CSV = CSVFile(file[0], file[1])
+            noExtension, theExposure = CSV.getLabParams()
+            xdata, data = CSV.getData()
+            x = [i * theExposure for i in xdata]
+            for ydata in data:
+                stddev = round(statistics.stdev(ydata), 2)
+                y = [i/max(ydata) + shift + (len(data) - data.index(ydata) - 1) for i in ydata]
+
+                plt.plot(x, y, label='%s (std dev = %s)' % (noExtension, stddev))
+
+        plt.ylim((0, shift + len(data) + 0.1))
+        plt.xlabel('Time [s]')
+        plt.ylabel('Intensity (normalised)')
+        plt.legend()
+        plt.show()
+
+    elif option == 2:
+
+        print(STANDARD DEVIATION FOR...)
+
+        for file in Folder().iterateCSVThroughFolder():
+
+            CSV = CSVFile(file[0], file[1])
+            noExtension, theExposure = CSV.getLabParams()
+            xdata, data = CSV.getData()
+            x = [i * theExposure for i in xdata]
+            print('\n%s' %noExtension)
+            deviations = []
+            for ydata in data:
+                stddev = round(statistics.stdev(ydata), 2)
+                print('Pixel %s: %s' % (data.index(ydata), stddev))
+                deviations.append(stddev)
+            mean = numpy.mean(deviations)
+            print('Mean = %s' % mean)
+
+    else:
+        print('Option not recognised.')
+
+
+# file = CSVFile(r"C:\Users\Ariane Gouin\Documents\ULaval\2018_Ete\cervo\P3_francois\20180612\results", '200ms during 1min speckles-SPC.csv')
+# file.getData()
 

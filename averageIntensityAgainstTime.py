@@ -95,7 +95,7 @@ if __name__ == '__main__':
         for file in Folder().iterateCSVThroughFolder():
             number += 1
 
-            plt.figure(number // 1)
+            # plt.figure(number // 1)
 
             CSV = CSVFile(file[0], file[1])
             noExtension, theExposure = CSV.getLabParams()
@@ -118,8 +118,6 @@ if __name__ == '__main__':
     elif option == 2:
         print('option2')
 
-        allmeandeviations = []
-
         number = 0
         f = 0
         ticks = []
@@ -137,7 +135,7 @@ if __name__ == '__main__':
             xaxis = []
             deviations = []
             for ydata in data:
-                number += 1
+                # number += 1
                 y = [i/max(ydata) for i in ydata]
                 stddev = round(statistics.stdev(y), 2)
                 print('Pixel %s: %s' % (data.index(ydata), stddev))
@@ -147,29 +145,27 @@ if __name__ == '__main__':
 
             mean = numpy.mean(deviations)
             print('Mean = %s' % mean)
-            allmeandeviations.append(mean)
 
             number += 1
             x = [number]
             y = [mean]
 
-            plt.bar(xaxis, deviations, color='lightgrey', label='%s (mean = %s)' % (noExtension, mean))
+            ticks.append(number)
+            labels.append('%s' % noExtension)
+
+            # plt.bar(xaxis, deviations, color='lightgrey', label='%s (mean = %s)' % (noExtension, mean))
             if (f % 2) == 0:
                 plt.bar(x, y, color='red')
                 number += 1
             else:
                 plt.bar(x, y, color='blue')
 
-            ticks.append(number)
-            labels.append('%s' % noExtension)
-
         plt.ylim(ymin=0)
-        plt.ylabel('Standard deviation')
+        plt.ylabel('Standard deviation (normalised)')
         plt.xticks(ticks, labels)
         plt.xticks(rotation=90)
         plt.tight_layout()
         plt.show()
-
 
     else:
         print('Option not recognised.')

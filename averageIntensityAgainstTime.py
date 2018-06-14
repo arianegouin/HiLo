@@ -50,7 +50,7 @@ class CSVFile:
         if exposure.find('m') != -1:
             exposure = float(exposure.replace('m', '')) / 1000
         else:
-            exposure = float(exposure)
+            exposure = float(exposure.replace(',', '.'))
         return name, exposure
 
     def getData(self):
@@ -134,10 +134,7 @@ if __name__ == '__main__':
             x = [i * theExposure for i in xdata]
             print('\n%s' %noExtension)
 
-            ticks.append(number + 1)
-            labels.append('%s' % noExtension)
-
-            yaxis = []
+            xaxis = []
             deviations = []
             for ydata in data:
                 number += 1
@@ -145,18 +142,26 @@ if __name__ == '__main__':
                 stddev = round(statistics.stdev(y), 2)
                 print('Pixel %s: %s' % (data.index(ydata), stddev))
 
-                yaxis.append(number)
+                xaxis.append(number)
                 deviations.append(stddev)
 
             mean = numpy.mean(deviations)
             print('Mean = %s' % mean)
             allmeandeviations.append(mean)
 
+            number += 1
+            x = [number]
+            y = [mean]
+
+            plt.bar(xaxis, deviations, color='lightgrey', label='%s (mean = %s)' % (noExtension, mean))
             if (f % 2) == 0:
-                plt.bar(yaxis, deviations, color='green', label='%s (mean = %s)' % (noExtension, mean))
+                plt.bar(x, y, color='red')
                 number += 1
             else:
-                plt.bar(yaxis, deviations, color='blue', label='%s (mean = %s)' % (noExtension, mean))
+                plt.bar(x, y, color='blue')
+
+            ticks.append(number)
+            labels.append('%s' % noExtension)
 
         plt.ylim(ymin=0)
         plt.ylabel('Standard deviation')

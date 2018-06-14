@@ -1,3 +1,4 @@
+
 import csv
 from matplotlib import pyplot as plt
 import tkinter as tk
@@ -5,6 +6,9 @@ from tkinter import filedialog
 import os
 import statistics
 import numpy
+
+# file = CSVFile(r"C:\Users\Ariane Gouin\Documents\ULaval\2018_Ete\cervo\P3_francois\20180612\results", '200ms during 1min speckles-SPC.csv')
+# file.getData()
 
 
 class Folder:
@@ -84,11 +88,13 @@ if __name__ == '__main__':
     option = float(input('1: graph, or 2: std dev --> ').strip())
 
     if option == 1:
+        print('ootion1')
 
         # shift = -1
         shift = 0
 
         for file in Folder().iterateCSVThroughFolder():
+            print('file')
             # shift += 1
 
             CSV = CSVFile(file[0], file[1])
@@ -101,17 +107,22 @@ if __name__ == '__main__':
 
                 plt.plot(x, y, label='%s (std dev = %s)' % (noExtension, stddev))
 
-        plt.ylim((0, shift + len(data) + 0.1))
-        plt.xlabel('Time [s]')
-        plt.ylabel('Intensity (normalised)')
+        # plt.ylim((0, shift + len(data) + 0.1))
+        # plt.xlabel('Time [s]')
+        # plt.ylabel('Intensity (normalised)')
         plt.legend()
         plt.show()
 
     elif option == 2:
+        print('option2')
 
-        print(STANDARD DEVIATION FOR...)
+        yaxis = []
+        alldeviations = []
+
+        number = 0
 
         for file in Folder().iterateCSVThroughFolder():
+            number += 2
 
             CSV = CSVFile(file[0], file[1])
             noExtension, theExposure = CSV.getLabParams()
@@ -120,16 +131,20 @@ if __name__ == '__main__':
             print('\n%s' %noExtension)
             deviations = []
             for ydata in data:
+                number += 1
                 stddev = round(statistics.stdev(ydata), 2)
                 print('Pixel %s: %s' % (data.index(ydata), stddev))
                 deviations.append(stddev)
+
+                yaxis.append()
             mean = numpy.mean(deviations)
             print('Mean = %s' % mean)
+            alldeviations.append(mean)
+
 
     else:
         print('Option not recognised.')
 
 
-# file = CSVFile(r"C:\Users\Ariane Gouin\Documents\ULaval\2018_Ete\cervo\P3_francois\20180612\results", '200ms during 1min speckles-SPC.csv')
-# file.getData()
+
 

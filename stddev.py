@@ -1,6 +1,27 @@
 from PIL import Image
 import numpy
 from matplotlib import pyplot as plt
+import tkinter as tk
+from tkinter import filedialog
+import os
+
+
+class Folder:
+
+    def __init__(self):
+        root = tk.Tk()
+        root.withdraw()
+        root.directory = filedialog.askdirectory(initialdir=os.getcwd(), title="Select folder with CSV files")
+        self.directory = root.directory
+
+    def iterateThroughFolder(self, extension):
+        for file in os.listdir(self.directory):
+            filestring = os.fsdecode(file)
+            if filestring.endswith(".%s" % extension):
+                # yield os.path.join(self.directory, filestring)
+                yield self.directory, filestring
+            else:
+                continue
 
 
 class TiffImage:
@@ -50,31 +71,30 @@ class StackArray:
         return numpy.std(self.stack, axis=0)
 
 
-
-image0 = TiffImage('0.tiff')
-array0 = image0.turnIntoArray()
-array0.normalise()
-array0.saveImage('your_file.tiff')
-
-yourfile = TiffImage('your_file.tiff')
-yourfile = yourfile.returnArray()
-
-stack = StackArray(yourfile, yourfile, yourfile)
-std = stack.stddev()
-
-
-
-image0 = TiffImage('0.tiff')
-array0 = image0.returnArray()
-
-image1 = TiffImage('1.tiff')
-array1 = image1.returnArray()
-
-image2 = TiffImage('2.tiff')
-array2 = image2.returnArray()
-
-stack = StackArray(array0, array1, array2)
-std = stack.stddev()
-std = std.ravel()
-
-# plt.hist(std, bins=100)
+# image0 = TiffImage('0.tiff')
+# array0 = image0.turnIntoArray()
+# array0.normalise()
+# array0.saveImage('your_file.tiff')
+#
+# yourfile = TiffImage('your_file.tiff')
+# yourfile = yourfile.returnArray()
+#
+# stack = StackArray(yourfile, yourfile, yourfile)
+# std = stack.stddev()
+#
+#
+#
+# image0 = TiffImage('0.tiff')
+# array0 = image0.returnArray()
+# # print(array0.ravel().shape)
+# plt.hist(array0.ravel(), bins=100)
+# # plt.show()
+#
+# image1 = TiffImage('1.tiff')
+# array1 = image1.returnArray()
+#
+# image2 = TiffImage('2.tiff')
+# array2 = image2.returnArray()
+#
+# stack = StackArray(array0, array1, array2)
+# std = stack.stddev()

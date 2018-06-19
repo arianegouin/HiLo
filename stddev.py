@@ -15,13 +15,16 @@ class Folder:
         self.directory = root.directory
 
     def iterateThroughFolder(self, extension):
-        for file in os.listdir(self.directory):
+        wantedFiles = {}
+        for file in sorted(os.listdir(self.directory)):
             filestring = os.fsdecode(file)
             if filestring.endswith(".%s" % extension):
+                number = float(filestring.split('.')[0])
                 # yield os.path.join(self.directory, filestring)
-                yield self.directory, filestring
+                wantedFiles[number] = (self.directory, filestring)
             else:
                 continue
+        return wantedFiles
 
 
 class TiffImage:

@@ -1,4 +1,4 @@
-from stddev import Folder, TiffImage
+from hilo import Folder, TiffImage
 import os
 from matplotlib import pyplot as plt
 

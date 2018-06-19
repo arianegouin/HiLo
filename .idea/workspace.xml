@@ -2,85 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d262995-6a13-4483-a4cc-a25ed65d131e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NormaliseAndSave.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/0,2s during 1min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/0,2s during 1min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/0,3s during 1min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/0,3s during 1min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/0,4s during 1min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/0,4s during 1min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/0,5s during 1min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/0,5s during 1min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/0,6s during 1min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/0,6s during 1min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/0,7s during 1min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/0,7s during 1min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/0,8s during 1min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/0,8s during 1min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/0,9s during 1min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/0,9s during 1min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/1s during 5min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/1s during 5min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/2s during 5min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/2s during 5min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/4s during 5min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/4s during 5min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/5s during 5min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/5s during 5min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/StandardDev.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/1000s during 5min speckles-other.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/1000s during 5min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/1000s during 5min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/2000s during 5min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/2000s during 5min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/200ms during 1min speckles-other.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/200ms during 1min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/200ms during 1min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/3000s during 5min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/300ms during 1min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/300ms during 1min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/4000s during 5min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/4000s during 5min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/400ms during 1min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/400ms during 1min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/5000s during 5min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/5000s during 5min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/500ms during 1min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/500ms during 1min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/600ms during 1min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/600ms during 1min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/700ms during 1min speckles-other.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/700ms during 1min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/700ms during 1min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/800ms during 1min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/800ms during 1min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/900ms during 1min speckles.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/csv/900ms during 1min uniform.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/graphs/400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/graphs/4000.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/graphs/5000.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/graphs/600 speckles.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/graphs/600 uniform.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/graphs/700.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/graphs/800.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/graphs/900.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/graphs/stddev.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/#data/graphs/stddev_means.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results/1-1-s.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results/1-1-t.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results/1-1-u.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/your_file.tiff" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/intensityAgainstTime.py" afterPath="$PROJECT_DIR$/IntensityAgainstTime.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0.tiff" afterPath="$PROJECT_DIR$/0.tiff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1.tiff" afterPath="$PROJECT_DIR$/1.tiff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2.tiff" afterPath="$PROJECT_DIR$/2.tiff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3.tiff" afterPath="$PROJECT_DIR$/3.tiff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4.tiff" afterPath="$PROJECT_DIR$/4.tiff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/5.tiff" afterPath="$PROJECT_DIR$/5.tiff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/StddevAndSave.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/stddev.py" afterPath="$PROJECT_DIR$/hilo.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stddev.py" afterPath="$PROJECT_DIR$/stddev.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntensityAgainstTime.py" afterPath="$PROJECT_DIR$/IntensityAgainstTime.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NormaliseAndSave.py" afterPath="$PROJECT_DIR$/NormaliseAndSave.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -95,27 +21,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="stddev.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stddev.py">
+      <file leaf-file-name="hilo.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hilo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-484">
-              <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+            <state relative-caret-position="201">
+              <caret line="72" column="15" lean-forward="false" selection-start-line="72" selection-start-column="15" selection-end-line="72" selection-end-column="15" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
-                <element signature="e#1605#1807#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NormaliseAndSave.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NormaliseAndSave.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NormaliseAndSave.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" column="65" lean-forward="true" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -123,7 +46,7 @@
       <file leaf-file-name="try.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/try.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3388">
+            <state relative-caret-position="3520">
               <caret line="160" column="24" lean-forward="false" selection-start-line="160" selection-start-column="8" selection-end-line="160" selection-end-column="24" />
               <folding>
                 <element signature="e#1#11#0" expanded="true" />
@@ -132,13 +55,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IntensityAgainstTime.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="IntensityAgainstTime.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IntensityAgainstTime.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+            <state relative-caret-position="352">
+              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
               <folding>
-                <element signature="e#0#36#0" expanded="true" />
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StddevAndSave.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StddevAndSave.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,10 +106,11 @@
         <option value="$PROJECT_DIR$/PointSpreadFunction.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py" />
         <option value="$PROJECT_DIR$/averageIntensityAgainstTime.py" />
-        <option value="$PROJECT_DIR$/stddev.py" />
         <option value="$PROJECT_DIR$/intensityAgainstTime.py" />
-        <option value="$PROJECT_DIR$/IntensityAgainstTime.py" />
+        <option value="$PROJECT_DIR$/stddev.py" />
         <option value="$PROJECT_DIR$/NormaliseAndSave.py" />
+        <option value="$PROJECT_DIR$/IntensityAgainstTime.py" />
+        <option value="$PROJECT_DIR$/StddevAndSave.py" />
       </list>
     </option>
   </component>
@@ -226,24 +162,7 @@
       <recent name="C:\Users\Ariane Gouin\Documents\GitHub\HiLo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.NormaliseAndSave">
-    <configuration default="false" name="PointSpreadFunction" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PointSpreadFunction" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PointSpreadFunction.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.StddevAndSave">
     <configuration default="false" name="averageIntensityAgainstTime" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -273,7 +192,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PointSpreadFunction" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stddev.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Ariane Gouin\Documents\GitHub\HiLo\hilo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -308,6 +227,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PointSpreadFunction" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NormaliseAndSave.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="StddevAndSave" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PointSpreadFunction" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/StddevAndSave.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -460,19 +396,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.PointSpreadFunction" />
-      <item index="1" class="java.lang.String" itemvalue="Python.averageIntensityAgainstTime" />
-      <item index="2" class="java.lang.String" itemvalue="Python.stddev" />
-      <item index="3" class="java.lang.String" itemvalue="Python.intensityAgainstTime" />
-      <item index="4" class="java.lang.String" itemvalue="Python.NormaliseAndSave" />
+      <item index="0" class="java.lang.String" itemvalue="Python.averageIntensityAgainstTime" />
+      <item index="1" class="java.lang.String" itemvalue="Python.stddev" />
+      <item index="2" class="java.lang.String" itemvalue="Python.intensityAgainstTime" />
+      <item index="3" class="java.lang.String" itemvalue="Python.NormaliseAndSave" />
+      <item index="4" class="java.lang.String" itemvalue="Python.StddevAndSave" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.NormaliseAndSave" />
-        <item index="1" class="java.lang.String" itemvalue="Python.intensityAgainstTime" />
-        <item index="2" class="java.lang.String" itemvalue="Python.stddev" />
-        <item index="3" class="java.lang.String" itemvalue="Python.averageIntensityAgainstTime" />
-        <item index="4" class="java.lang.String" itemvalue="Python.PointSpreadFunction" />
+        <item index="0" class="java.lang.String" itemvalue="Python.StddevAndSave" />
+        <item index="1" class="java.lang.String" itemvalue="Python.NormaliseAndSave" />
+        <item index="2" class="java.lang.String" itemvalue="Python.intensityAgainstTime" />
+        <item index="3" class="java.lang.String" itemvalue="Python.stddev" />
+        <item index="4" class="java.lang.String" itemvalue="Python.averageIntensityAgainstTime" />
       </list>
     </recent_temporary>
   </component>
@@ -481,12 +417,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09677419" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13432047" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20649652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3863109" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5510441" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -498,6 +434,22 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5510441" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13432047" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -509,13 +461,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/averageIntensityAgainstTime.py" />
     <entry file="file://$PROJECT_DIR$/averageIntensityAgainstTime.py" />
     <entry file="file://$PROJECT_DIR$/averageIntensityAgainstTime.py" />
@@ -586,9 +531,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/NormaliseAndSave.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/try.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3388">
+        <state relative-caret-position="3520">
           <caret line="160" column="24" lean-forward="false" selection-start-line="160" selection-start-column="8" selection-end-line="160" selection-end-column="24" />
           <folding>
             <element signature="e#1#11#0" expanded="true" />
@@ -596,33 +549,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stddev.py">
+    <entry file="file://$PROJECT_DIR$/hilo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-484">
-          <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        <state relative-caret-position="201">
+          <caret line="72" column="15" lean-forward="false" selection-start-line="72" selection-start-column="15" selection-end-line="72" selection-end-column="15" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
-            <element signature="e#1605#1807#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StddevAndSave.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IntensityAgainstTime.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        <state relative-caret-position="352">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
           <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NormaliseAndSave.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="65" lean-forward="true" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
+            <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>

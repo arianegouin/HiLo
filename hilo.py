@@ -65,8 +65,8 @@ class TiffArray:
 
 class StackArray:
 
-    def __init__(self, stack1, *args):
-        self.stack = numpy.stack((stack1, *args), axis=0)
+    def __init__(self, stacks, *args):
+        self.stack = numpy.stack(stacks, axis=0)
 
         self.shape = self.stack.shape
 

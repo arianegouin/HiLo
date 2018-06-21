@@ -12,13 +12,13 @@ if not os.path.exists(newFolderPath):
 for j in sorted(wantedFiles):
     directory, name = wantedFiles[j]
 
-    image = TiffImage('%s' % os.path.join(directory, name))
+    image = TiffImage('%s/%s' % (directory, name))
 
     array = image.turnIntoArray()
 
     array.normalise()
 
-    array.saveImage('%s' % os.path.join(newFolderPath, name))
+    array.saveImage('%s/%s' % (newFolderPath, name))
 
 print('... Has saved normalised datafiles to %s' % newFolderPath)
 

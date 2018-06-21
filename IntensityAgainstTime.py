@@ -15,9 +15,10 @@ x = []
 y = []
 
 wantedFolder = Folder()
-wantedFiles = wantedFolder.iterateThroughFolder('tiff')
 print('... Uploading datafiles from %s' % wantedFolder.directory)
+wantedFiles = wantedFolder.iterateThroughFolder('tiff')
 
+print('... Processing images')
 for j in sorted(wantedFiles):
     directory, name = wantedFiles[j]
     i += 1

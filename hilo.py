@@ -7,13 +7,15 @@ import os
 import statistics
 import itertools
 
+
 class Folder:
 
     def __init__(self):
-        root = tk.Tk()
-        root.withdraw()
-        root.directory = filedialog.askdirectory(initialdir=os.getcwd(), title="Select folder with CSV files")
-        self.directory = root.directory
+        # root = tk.Tk()
+        # root.withdraw()
+        # root.directory = filedialog.askdirectory(initialdir=os.getcwd(), title="Select folder with CSV files")
+        # self.directory = root.directory
+        self.directory = r"C:\Users\Ariane Gouin\Documents\ULaval\2018_Ete\cervo\P3_francois\20180620\40ms gain10 speckles\Jun 20, 2018 04-34-45 AM\normalised"
 
     def iterateThroughFolder(self, extension):
         wantedFiles = {}
@@ -22,18 +24,26 @@ class Folder:
             if filestring.endswith(".%s" % extension):
                 number = float(filestring.split('.')[0])
                 # yield os.path.join(self.directory, filestring)
-                wantedFiles[number] = (self.directory, filestring)
+                wantedFiles[number] = [self.directory, filestring]
             else:
                 continue
         return wantedFiles
 
 
+class File:
+    def __init__(self):
+        root = tk.Tk()
+        root.withdraw()
+        root.PathAndFilename = filedialog.askopenfilename(initialdir=os.getcwd(), title="Select Tiff file",
+                                                          filetypes=(("TIFF files", "*.tiff"), ("all files", "*.*")))
+        self.directory = os.path.split(root.PathAndFilename)[0]
+        self.name = os.path.basename(root.PathAndFilename)
+
+
 class TiffImage:
 
     def __init__(self, path):
-        print(path)
         self.image = Image.open(r"%s" % path, mode='r')
-        print(self.image)
 
     def show(self):
         self.image.show()
@@ -41,7 +51,7 @@ class TiffImage:
     def returnArray(self):
         # return numpy.array(self.image, dtype='float32')
         a = numpy.asarray(self.image)
-        print(a.shape)
+        # print(a.dtype)
         return a
 
     def turnIntoArray(self):
@@ -105,9 +115,8 @@ class StackedArray:
         for y, x in itertools.product(range(lines), range(columns)):
             f = self.stack[:, y, x]
             dev = numpy.std(f)
-            print(y, 'stddev')
             alldev[y, x] = dev
-        return alldev
+        return TiffArray(alldev)
 
 
 # a = numpy.array([ [ [1, 1, 1], [2, 2, 2], [3, 3, 3], [4, 4, 4] ], [ [11, 11, 11], [22, 22, 22], [33, 33, 33], [44, 44, 44] ] ])
@@ -137,11 +146,12 @@ class StackedArray:
 #
 #
 #
-# image0 = TiffImage('0.tiff')
-# array0 = image0.returnArray()
+# image0 = TiffImage(r"C:\Users\Ariane Gouin\Documents\ULaval\2018_Ete\cervo\P3_francois\20180620\40ms gain10 speckles\Jun 20, 2018 04-34-45 AM\normalised\0.tiff")
+# array0 = image0.turnIntoArray()
+# array0.show()
 # # print(array0.ravel().shape)
 # plt.hist(array0.ravel(), bins=100)
-# # plt.show()
+# plt.show()
 #
 # image1 = TiffImage('1.tiff')
 # array1 = image1.returnArray()

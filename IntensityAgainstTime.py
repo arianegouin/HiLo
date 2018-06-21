@@ -16,7 +16,7 @@ y = []
 
 wantedFolder = Folder()
 wantedFiles = wantedFolder.iterateThroughFolder('tiff')
-print('... Datafiles are uploading from %s' % wantedFolder.directory)
+print('... Uploading datafiles from %s' % wantedFolder.directory)
 
 for j in sorted(wantedFiles):
     directory, name = wantedFiles[j]
@@ -36,4 +36,4 @@ plt.ylabel('Sum of all pixels intensity')
 plt.plot(x, y, '-')
 
 plt.savefig(os.path.join(newFigPath, newFigName))
-print('... Figure has been saved to %s' % os.path.join(newFigPath, newFigName))
+print('... Has saved figure to %s' % os.path.join(newFigPath, newFigName))

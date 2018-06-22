@@ -11,20 +11,22 @@ import itertools
 class Folder:
 
     def __init__(self):
-        # root = tk.Tk()
-        # root.withdraw()
-        # root.directory = filedialog.askdirectory(initialdir=os.getcwd(), title="Select folder with CSV files")
-        # self.directory = root.directory
-        self.directory = r"C:\Users\Ariane Gouin\Documents\ULaval\2018_Ete\cervo\P3_francois\20180620\40ms gain10 speckles\Jun 20, 2018 04-34-45 AM\normalised"
+        root = tk.Tk()
+        root.withdraw()
+        root.directory = filedialog.askdirectory(initialdir=os.getcwd(), title="Select folder")
+        self.directory = root.directory
 
     def iterateThroughFolder(self, extension):
         wantedFiles = {}
         for file in sorted(os.listdir(self.directory)):
             filestring = os.fsdecode(file)
             if filestring.endswith(".%s" % extension):
-                number = float(filestring.split('.')[0])
-                # yield os.path.join(self.directory, filestring)
-                wantedFiles[number] = [self.directory, filestring]
+                key = filestring.split('.')[0]
+                try:
+                    key = float(key)
+                except ValueError:
+                    pass
+                wantedFiles[key] = [self.directory, filestring]
             else:
                 continue
         return wantedFiles
@@ -75,6 +77,9 @@ class TiffArray:
     def normalise(self):
         self.array = self.array / self.sumAllPixels()
 
+    def getMean(self):
+        return numpy.mean(self.array)
+
     def saveImage(self, name):
         return Image.fromarray(self.array).save('%s' % name)
 
@@ -87,26 +92,6 @@ class StackedArray:
         self.shape = self.stack.shape
 
     def deviationAlongZ(self):
-        # return numpy.std(self.stack, axis=0)
-        stacks = self.shape[0]
-        lines = self.shape[1]
-        columns = self.shape[2]
-
-        alldev = numpy.zeros((lines, columns))
-        for j in range(lines):
-            for k in range(columns):
-                f = []
-                for i in range(stacks):
-                    f.append(self.stack[:, j, k])
-                    # print(i, j, k)
-                dev = statistics.stdev(f)
-                # print(i, j, k, 'stddev')
-                alldev[j, k] = dev
-                # print(i, j, k, 'alldev')
-            # print('%s' % (j/range(lines)))
-        return alldev
-
-    def arnaud(self):
         stacks = self.shape[0]
         lines = self.shape[1]
         columns = self.shape[2]
@@ -119,7 +104,10 @@ class StackedArray:
         return TiffArray(alldev)
 
 
-# a = numpy.array([ [ [1, 1, 1], [2, 2, 2], [3, 3, 3], [4, 4, 4] ], [ [11, 11, 11], [22, 22, 22], [33, 33, 33], [44, 44, 44] ] ])
+# a = numpy.array([ [ [1, 1, 1], [2, 2, 2], [3, 3, 3], [4, 4, 4] ], [ [11, 11, 11], [22, 2000, 22], [33, 33, 33], [44, 44, 44] ] ])
+#
+# b = numpy.mean(a)
+# print(b)
 # print(a)
 # print('\n')
 #
@@ -161,3 +149,5 @@ class StackedArray:
 #
 # stack = StackArray(array0, array1, array2)
 # std = stack.stddev()
+
+

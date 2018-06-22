@@ -2,12 +2,14 @@ from hilo import Folder, TiffImage
 import os
 
 wantedFolder = Folder()
-wantedFiles = wantedFolder.iterateThroughFolder('tiff')
 print('... Uploading datafiles from %s' % wantedFolder.directory)
+wantedFiles = wantedFolder.iterateThroughFolder('tiff')
 
 newFolderPath = '%s/normalised' % wantedFolder.directory
 if not os.path.exists(newFolderPath):
     os.makedirs(newFolderPath)
+
+print('... Processing images')
 
 for j in sorted(wantedFiles):
     directory, name = wantedFiles[j]

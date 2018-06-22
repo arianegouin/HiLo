@@ -27,6 +27,7 @@ print('... Computing std deviations')
 dev = zstack.deviationAlongZ()
 print('Shape of 2D image of std dev: ', dev.shape)
 
+# newFolderPath = input('New figure path: ')
 newFolderPath = '%s/StandardDeviation' % r"C:\Users\Ariane Gouin\Documents\ULaval\2018_Ete\cervo\P3_francois\results"
 if not os.path.exists(newFolderPath):
     os.makedirs(newFolderPath)

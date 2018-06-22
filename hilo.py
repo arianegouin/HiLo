@@ -60,6 +60,9 @@ class TiffImage:
         array = self.returnArray()
         return TiffArray(array)
 
+    def close(self):
+        self.image.close()
+
 
 class TiffArray:
 
@@ -74,11 +77,16 @@ class TiffArray:
     def sumAllPixels(self):
         return self.array.sum()
 
-    def normalise(self):
-        self.array = self.array / self.sumAllPixels()
+    def getMax(self):
+        return max(map(max, self.array))
 
     def getMean(self):
         return numpy.mean(self.array)
+
+    # def normalise(self):
+    #     self.array = self.array / self.sumAllPixels()
+    def normalise(self):
+        self.array = self.array / self.getMean()
 
     def saveImage(self, name):
         return Image.fromarray(self.array).save('%s' % name)
@@ -91,20 +99,49 @@ class StackedArray:
 
         self.shape = self.stack.shape
 
-    def deviationAlongZ(self):
-        stacks = self.shape[0]
-        lines = self.shape[1]
-        columns = self.shape[2]
+    def __getitem__(self, key):
+        return self.stack[int(key)]
 
-        alldev = numpy.zeros((lines, columns))
-        for y, x in itertools.product(range(lines), range(columns)):
-            f = self.stack[:, y, x]
-            dev = numpy.std(f)
-            alldev[y, x] = dev
+    def show(self):
+        print(self.stack)
+
+    def deviationAlongZ(self):
+        alldev = numpy.std(self.stack, axis=0)
+        # stacks = self.shape[0]
+        # lines = self.shape[1]
+        # columns = self.shape[2]
+        #
+        # alldev = numpy.zeros((lines, columns))
+        # for y, x in itertools.product(range(lines), range(columns)):
+        #     f = self.stack[:, y, x]
+        #     dev = numpy.std(f)
+        #     alldev[y, x] = dev
         return TiffArray(alldev)
 
 
-# a = numpy.array([ [ [1, 1, 1], [2, 2, 2], [3, 3, 3], [4, 4, 4] ], [ [11, 11, 11], [22, 2000, 22], [33, 33, 33], [44, 44, 44] ] ])
+    def getMax(self):
+        return max([max(map(max, i)) for i in self.stack])
+
+    def getMean(self):
+        return numpy.mean(self.stack)
+
+    def normalise(self):
+        self.array = self.stack / self.getMean()
+
+#
+# a = numpy.array([ [ [1, 1, 1111], [2, 2, 2], [3, 3, 3], [4, 4, 4] ], [ [111, 11, 11], [22, 2000, 2222], [33, 33, 33], [44, 44, 44] ] ])
+# print(a)
+# print(a/10)
+# print(numpy.mean(a))
+
+# print(b.meanAlongZ().show())
+# b = numpy.array([[1, 1, 1], [2, 2, 2]])
+# c = numpy.array([[1, 11, 0], [2, 22, 222]])
+
+# for i in b:
+# d = [max(map(max, i)) for i in b]
+# print(max(d))
+# print(max(map(max, b)))
 #
 # b = numpy.mean(a)
 # print(b)
@@ -126,8 +163,20 @@ class StackedArray:
 # array0.normalise()
 # array0.saveImage('your_file.tiff')
 #
-# yourfile = TiffImage('your_file.tiff')
+# yourfile = TiffImage(r"C:\Users\Ariane Gouin\Documents\ULaval\2018_Ete\cervo\P3_francois\results\Mean\40ms uniform.tiff")
 # yourfile = yourfile.returnArray()
+# print(yourfile.shape)
+# a = 0
+# for i in yourfile:
+#     a += 1
+# print(a)
+# secondfile = TiffImage(r"C:\Users\Ariane Gouin\Documents\ULaval\2018_Ete\cervo\P3_francois\20180620\40ms gain10 uniform\Jun 20, 2018 04-50-10 AM\1.tiff")
+# secondfile = secondfile.returnArray()
+# print(secondfile)
+# stack = StackedArray([yourfile, secondfile])
+# mean = stack.meanAlongZ()
+# print(mean.show())
+# print(max([max(yourfile[i]) for i in range(len(yourfile))]))
 #
 # stack = StackArray(yourfile, yourfile, yourfile)
 # std = stack.stddev()

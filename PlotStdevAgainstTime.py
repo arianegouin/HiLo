@@ -3,10 +3,13 @@ from matplotlib import pyplot as plt
 
 
 def getIlluminationType(string):
-    if 'speckles' in string:
+    if 'bla' in string:
         return True
-    elif 'uniform' in string:
-        return False
+        pass
+    # elif 'speckles' in string:
+    #     return True
+    # elif 'uniform' in string:
+    #     return False
     else:
         return None
 

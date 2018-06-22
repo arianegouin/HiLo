@@ -18,4 +18,4 @@ plt.xlabel('Standard deviations')
 nameNoExtension = wantedFile.name.split('.')[0]
 plt.savefig('%s/%s' % (wantedFile.directory, nameNoExtension))
 # plt.show()
-print('... Has saved figure to %s/%s' % (wantedFile.directory, nameNoExtension))
+print('... Has saved figure %s to %s' % (nameNoExtension, wantedFile.directory))

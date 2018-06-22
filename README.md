@@ -1,6 +1,6 @@
 # HiLo
 
-hilo.py contains class  
+hilo.py contains all Classes  
 
 Python files should be run in this order.  
 1. PlotIntensityAgainstTime.py  

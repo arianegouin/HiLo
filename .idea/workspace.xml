@@ -4,7 +4,7 @@
     <list default="true" id="1d262995-6a13-4483-a4cc-a25ed65d131e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NormaliseAndSave.py" beforeDir="false" afterPath="$PROJECT_DIR$/NormaliseStackAndSave.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NormaliseAndSave.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/PlotStdevAgainstTime.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlotStdevAgainstTime.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hilo.py" beforeDir="false" afterPath="$PROJECT_DIR$/hilo.py" afterDir="false" />
     </list>
@@ -35,7 +35,7 @@
       <file leaf-file-name="hilo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hilo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1343">
+            <state relative-caret-position="1258">
               <caret line="130" column="1" selection-start-line="130" selection-start-column="1" selection-end-line="130" selection-end-column="1" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
@@ -59,7 +59,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NormaliseStackAndSave.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NormaliseStackAndSave.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NormaliseStackAndSave.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="680">
@@ -68,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StdevAndSave.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StdevAndSave.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StdevAndSave.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -83,7 +83,7 @@
       <file leaf-file-name="PlotHistogram.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlotHistogram.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="119">
               <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
@@ -168,6 +168,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -179,7 +180,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -402,7 +402,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3280116" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.5907112" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32946298" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28351206" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28753352" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -536,19 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hilo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="130" column="1" selection-start-line="130" selection-start-column="1" selection-end-line="130" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <element signature="e#937#1352#0" />
-            <element signature="e#1377#1817#0" />
-            <element signature="e#1842#2419#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PlotIntensityAgainstTime.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -559,16 +546,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NormaliseStackAndSave.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PlotHistogram.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="119">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
@@ -579,10 +559,30 @@
     <entry file="file://$PROJECT_DIR$/StdevAndSave.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hilo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="130" column="1" selection-start-line="130" selection-start-column="1" selection-end-line="130" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#937#1352#0" />
+            <element signature="e#1377#1817#0" />
+            <element signature="e#1842#2419#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NormaliseStackAndSave.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>

@@ -1,5 +1,7 @@
 # HiLo
 
+## Je dédie ce readme à Ludo.
+
 hilo.py contains all Classes  
 
 Python files should be run in this order.  

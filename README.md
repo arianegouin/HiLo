@@ -2,9 +2,7 @@
 
 ## Je dédie ce readme à Ludo.
 
-hilo.py contains all Classes  
-
-## Python files should be run in this order.  
+## Python files should be run in this order:
 
 ### 1. PlotIntensityAgainstTime.py (optional)  
 - input with pop-up window: folder path of the acquired tiff images[1]  
@@ -29,6 +27,7 @@ hilo.py contains all Classes
 - output: Return the graph of standard deviations against the exposure time.  
 
 ### Note
+hilo.py contains all Classes
 'optional' means subsequent py can be run without. It usually is to Plot something to help visualise what has happened.
 [1] The tiff images should be named: '0.tiff', '1.tiff', '2.tiff', etc.
 [2] The name should contain the illumination type ('speckles' or 'uniform') and the exposure time (in ms). It could have other words but no other numbers. E.g.: '200ms speckles.tiff' 'uniform 400.tiff'. This is important for the PlotStdevAgainstTime.py to run correctly.

@@ -26,7 +26,7 @@
 - input with pop-up window: folder path of the tiff images containing the standard deviations[2]  
 - output: Return the graph of standard deviations against the exposure time.  
 
-### Note
+### Notes
 - hilo.py contains all Classes
 - 'optional' means subsequent py can be run without. It usually is to Plot something to help visualise what has happened.
 - [1] The tiff images should be named: '0.tiff', '1.tiff', '2.tiff', etc.

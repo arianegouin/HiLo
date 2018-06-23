@@ -2,10 +2,511 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d262995-6a13-4483-a4cc-a25ed65d131e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NormaliseAndSave.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/0.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/1.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/10.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/100.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/101.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/102.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/103.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/104.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/105.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/106.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/107.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/108.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/109.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/11.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/110.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/111.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/112.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/113.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/114.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/115.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/116.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/117.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/118.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/119.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/12.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/120.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/121.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/122.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/123.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/124.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/125.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/126.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/127.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/128.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/129.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/13.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/130.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/131.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/132.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/133.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/134.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/135.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/136.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/137.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/138.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/139.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/14.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/140.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/141.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/142.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/143.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/144.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/145.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/146.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/147.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/148.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/149.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/15.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/150.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/151.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/152.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/153.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/154.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/155.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/156.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/157.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/158.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/159.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/16.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/160.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/161.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/162.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/163.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/164.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/165.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/166.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/167.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/168.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/169.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/17.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/170.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/171.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/172.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/173.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/174.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/175.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/176.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/177.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/178.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/179.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/18.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/180.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/181.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/182.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/183.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/184.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/185.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/186.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/187.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/188.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/189.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/19.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/190.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/191.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/192.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/193.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/194.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/195.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/196.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/197.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/198.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/199.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/2.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/20.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/21.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/22.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/23.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/24.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/25.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/26.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/27.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/28.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/29.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/3.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/30.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/31.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/32.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/33.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/34.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/35.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/36.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/37.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/38.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/39.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/4.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/40.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/41.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/42.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/43.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/44.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/45.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/46.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/47.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/48.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/49.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/5.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/50.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/51.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/52.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/53.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/54.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/55.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/56.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/57.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/58.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/59.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/6.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/60.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/61.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/62.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/63.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/64.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/65.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/66.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/67.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/68.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/69.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/7.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/70.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/71.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/72.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/73.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/74.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/75.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/76.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/77.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/78.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/79.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/8.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/80.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/81.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/82.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/83.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/84.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/85.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/86.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/87.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/88.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/89.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/9.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/90.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/91.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/92.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/93.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/94.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/95.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/96.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/97.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/98.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/200ms uniform/99.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/0.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/1.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/10.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/100.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/101.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/102.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/103.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/104.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/105.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/106.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/107.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/108.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/109.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/11.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/110.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/111.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/112.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/113.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/114.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/115.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/116.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/117.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/118.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/119.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/12.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/120.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/121.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/122.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/123.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/124.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/125.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/126.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/127.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/128.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/129.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/13.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/130.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/131.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/132.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/133.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/134.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/135.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/136.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/137.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/138.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/139.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/14.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/140.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/141.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/142.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/143.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/144.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/145.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/146.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/147.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/148.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/149.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/15.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/150.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/151.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/152.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/153.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/154.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/155.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/156.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/157.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/158.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/159.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/16.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/160.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/161.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/162.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/163.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/164.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/165.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/166.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/167.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/168.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/169.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/17.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/170.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/171.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/172.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/173.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/174.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/175.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/176.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/177.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/178.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/179.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/18.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/180.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/181.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/182.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/183.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/184.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/185.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/186.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/187.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/188.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/189.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/19.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/190.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/191.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/192.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/193.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/194.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/195.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/196.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/197.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/198.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/199.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/2.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/20.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/200.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/201.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/202.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/203.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/204.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/205.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/206.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/207.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/208.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/209.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/21.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/210.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/211.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/212.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/213.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/214.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/215.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/216.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/217.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/218.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/219.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/22.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/220.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/221.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/222.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/223.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/224.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/225.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/226.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/227.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/228.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/229.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/23.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/230.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/231.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/232.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/233.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/234.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/235.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/236.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/237.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/238.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/239.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/24.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/240.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/241.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/242.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/243.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/244.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/245.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/246.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/247.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/248.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/249.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/25.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/250.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/251.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/252.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/253.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/254.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/255.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/256.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/257.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/258.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/259.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/26.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/260.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/261.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/262.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/263.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/264.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/265.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/266.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/267.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/268.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/269.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/27.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/270.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/271.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/272.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/273.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/274.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/275.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/276.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/277.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/278.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/279.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/28.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/280.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/281.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/282.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/283.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/284.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/285.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/286.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/287.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/288.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/289.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/29.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/290.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/291.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/292.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/293.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/294.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/295.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/296.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/297.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/298.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/299.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/3.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/30.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/31.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/32.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/33.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/34.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/35.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/36.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/37.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/38.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/39.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/4.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/40.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/41.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/42.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/43.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/44.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/45.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/46.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/47.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/48.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/49.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/5.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/50.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/51.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/52.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/53.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/54.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/55.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/56.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/57.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/58.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/59.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/6.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/60.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/61.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/62.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/63.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/64.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/65.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/66.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/67.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/68.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/69.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/7.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/70.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/71.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/72.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/73.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/74.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/75.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/76.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/77.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/78.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/79.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/8.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/80.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/81.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/82.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/83.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/84.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/85.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/86.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/87.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/88.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/89.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/9.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/90.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/91.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/92.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/93.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/94.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/95.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/96.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/97.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/98.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40ms speckles/99.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NormaliseStackAndSave.py" beforeDir="false" afterPath="$PROJECT_DIR$/NormaliseAndSave.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotIntensityAgainstTime.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlotIntensityAgainstTime.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlotStdevAgainstTime.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlotStdevAgainstTime.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StdevAndSave.py" beforeDir="false" afterPath="$PROJECT_DIR$/StdevAndSave.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hilo.py" beforeDir="false" afterPath="$PROJECT_DIR$/hilo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,88 +518,29 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/HiLo$IntensityAgainstTime.coverage" NAME="IntensityAgainstTime Coverage Results" MODIFIED="1529588540316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/HiLo$NormaliseAndSave.coverage" NAME="NormaliseAndSave Coverage Results" MODIFIED="1529612700515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/HiLo$NormaliseStackAndSave.coverage" NAME="NormaliseStackAndSave Coverage Results" MODIFIED="1529681473781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/HiLo$PlotIntensityAgainstTime.coverage" NAME="PlotIntensityAgainstTime Coverage Results" MODIFIED="1529612625374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HiLo$NormaliseAndSave.coverage" NAME="NormaliseAndSave Coverage Results" MODIFIED="1529784288641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HiLo$NormaliseStackAndSave.coverage" NAME="NormaliseStackAndSave Coverage Results" MODIFIED="1529690460008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/HiLo$hilo.coverage" NAME="hilo Coverage Results" MODIFIED="1529677529694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HiLo$PlotIntensityAgainstTime.coverage" NAME="PlotIntensityAgainstTime Coverage Results" MODIFIED="1529788774270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/HiLo$MeanAndSave.coverage" NAME="MeanAndSave Coverage Results" MODIFIED="1529666040688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/HiLo$NormaliseByMean.coverage" NAME="NormaliseByMean Coverage Results" MODIFIED="1529676681314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/HiLo$PlotHistogram.coverage" NAME="PlotHistogram Coverage Results" MODIFIED="1529665233233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/HiLo$PlotStdevAgainstTime.coverage" NAME="PlotStdevAgainstTime Coverage Results" MODIFIED="1529680543614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/HiLo$StdevAndSave.coverage" NAME="StdevAndSave Coverage Results" MODIFIED="1529687390423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HiLo$PlotHistogram.coverage" NAME="PlotHistogram Coverage Results" MODIFIED="1529690853417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HiLo$PlotStdevAgainstTime.coverage" NAME="PlotStdevAgainstTime Coverage Results" MODIFIED="1529787310028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HiLo$StdevAndSave.coverage" NAME="StdevAndSave Coverage Results" MODIFIED="1529784651775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="hilo.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hilo.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hilo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1258">
-              <caret line="130" column="1" selection-start-line="130" selection-start-column="1" selection-end-line="130" selection-end-column="1" />
+            <state relative-caret-position="321">
+              <caret line="120" selection-start-line="120" selection-end-line="120" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
                 <element signature="e#937#1352#0" />
-                <element signature="e#1377#1817#0" />
-                <element signature="e#1842#2419#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlotIntensityAgainstTime.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PlotIntensityAgainstTime.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NormaliseStackAndSave.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NormaliseStackAndSave.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StdevAndSave.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StdevAndSave.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlotHistogram.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PlotHistogram.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlotStdevAgainstTime.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PlotStdevAgainstTime.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,16 +577,16 @@
         <option value="$PROJECT_DIR$/stddev.py" />
         <option value="$PROJECT_DIR$/StddevAndSave.py" />
         <option value="$PROJECT_DIR$/IntensityAgainstTime.py" />
-        <option value="$PROJECT_DIR$/PlotIntensityAgainstTime.py" />
-        <option value="$PROJECT_DIR$/StdevAndSave.py" />
         <option value="$PROJECT_DIR$/PlotHistogram.py" />
         <option value="$PROJECT_DIR$/MeanAndSave.py" />
         <option value="$PROJECT_DIR$/NormaliseByMean.py" />
-        <option value="$PROJECT_DIR$/NormaliseAndSave.py" />
         <option value="$PROJECT_DIR$/NormaliseZstackAndSave.py" />
-        <option value="$PROJECT_DIR$/hilo.py" />
-        <option value="$PROJECT_DIR$/PlotStdevAgainstTime.py" />
         <option value="$PROJECT_DIR$/NormaliseStackAndSave.py" />
+        <option value="$PROJECT_DIR$/hilo.py" />
+        <option value="$PROJECT_DIR$/NormaliseAndSave.py" />
+        <option value="$PROJECT_DIR$/StdevAndSave.py" />
+        <option value="$PROJECT_DIR$/PlotStdevAgainstTime.py" />
+        <option value="$PROJECT_DIR$/PlotIntensityAgainstTime.py" />
       </list>
     </option>
   </component>
@@ -205,8 +647,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.StdevAndSave">
-    <configuration name="NormaliseByMean" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.PlotIntensityAgainstTime">
+    <configuration name="NormaliseAndSave" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PointSpreadFunction" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -219,13 +661,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NormaliseByMean.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NormaliseAndSave.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="NormaliseStackAndSave" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="PlotHistogram" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PointSpreadFunction" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -238,7 +680,26 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NormaliseStackAndSave.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PlotHistogram.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="PlotIntensityAgainstTime" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PointSpreadFunction" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PlotIntensityAgainstTime.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -301,25 +762,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="hilo" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PointSpreadFunction" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hilo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration default="true" type="ccruntests" factoryName="Run Study Tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -353,19 +795,19 @@
       <method />
     </configuration>
     <list>
-      <item itemvalue="Python.hilo" />
-      <item itemvalue="Python.NormaliseByMean" />
-      <item itemvalue="Python.NormaliseStackAndSave" />
       <item itemvalue="Python.StdevAndSave" />
       <item itemvalue="Python.PlotStdevAgainstTime" />
+      <item itemvalue="Python.PlotHistogram" />
+      <item itemvalue="Python.NormaliseAndSave" />
+      <item itemvalue="Python.PlotIntensityAgainstTime" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.StdevAndSave" />
-        <item itemvalue="Python.NormaliseStackAndSave" />
+        <item itemvalue="Python.PlotIntensityAgainstTime" />
         <item itemvalue="Python.PlotStdevAgainstTime" />
-        <item itemvalue="Python.hilo" />
-        <item itemvalue="Python.NormaliseByMean" />
+        <item itemvalue="Python.StdevAndSave" />
+        <item itemvalue="Python.NormaliseAndSave" />
+        <item itemvalue="Python.PlotHistogram" />
       </list>
     </recent_temporary>
   </component>
@@ -395,14 +837,14 @@
     <frame x="-8" y="-8" width="1552" height="848" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32946298" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3280116" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32946298" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3280116" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5907112" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32946298" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28753352" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.41509435" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3280116" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3264075" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -526,10 +968,37 @@
     <entry file="file://$PROJECT_DIR$/MeanAndSave.py" />
     <entry file="file://$PROJECT_DIR$/NormaliseByMean.py" />
     <entry file="file://$PROJECT_DIR$/NormaliseZstackAndSave.py" />
+    <entry file="file://$PROJECT_DIR$/PlotHistogram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NormaliseAndSave.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StdevAndSave.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PlotStdevAgainstTime.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        <state relative-caret-position="344">
+          <caret line="65" column="12" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
@@ -538,51 +1007,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PlotIntensityAgainstTime.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="46">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlotHistogram.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StdevAndSave.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hilo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="130" column="1" selection-start-line="130" selection-start-column="1" selection-end-line="130" selection-end-column="1" />
+        <state relative-caret-position="321">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
             <element signature="e#937#1352#0" />
-            <element signature="e#1377#1817#0" />
-            <element signature="e#1842#2419#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NormaliseStackAndSave.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>

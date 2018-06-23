@@ -6,10 +6,10 @@ def getIlluminationType(string):
     if 'bla' in string:
         return True
         pass
-    # elif 'speckles' in string:
-    #     return True
-    # elif 'uniform' in string:
-    #     return False
+    elif 'speckles' in string:
+        return True
+    elif 'uniform' in string:
+        return False
     else:
         return None
 
@@ -57,14 +57,15 @@ print(len(xUniform), len(yUniform))
 # print(xUniform, yUniform)
 
 
-plt.plot(xSpeckles, ySpeckles, 'o', color='red', label='Speckles')
-plt.plot(xUniform, yUniform, 'o', color='blue', label='Uniform')
+plt.plot(xSpeckles, ySpeckles, 'o', markersize=10, markerfacecolor='red', markeredgecolor='white', label='Speckles')
+plt.plot(xUniform, yUniform, 'o', markersize=5, markerfacecolor='blue', markeredgecolor='white', label='Uniform')
 
-plt.xlabel('Time [ms]')
+plt.tick_params(axis='both', direction='in')
+plt.xlabel('Exposure time [ms]')
 plt.ylabel('Std dev (mean)')
 plt.legend()
 # plt.show()
 
 
-plt.savefig('%s/%s' % (wantedFolder.directory, '#ALL'))
+plt.savefig('%s/%s' % (wantedFolder.directory, '#ALL'), bbox_inches='tight')
 

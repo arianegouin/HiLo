@@ -126,7 +126,7 @@ class StackedArray:
         return numpy.mean(self.stack)
 
     def normalise(self):
-        self.array = self.stack / self.getMean()
+        self.stack = self.stack / self.getMean()
 
 #
 # a = numpy.array([ [ [1, 1, 1111], [2, 2, 2], [3, 3, 3], [4, 4, 4] ], [ [111, 11, 11], [22, 2000, 2222], [33, 33, 33], [44, 44, 44] ] ])

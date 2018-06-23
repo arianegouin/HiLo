@@ -22,13 +22,14 @@ for j in sorted(wantedFiles):
 print('... Stacking images')
 zstack = StackedArray(arrays)
 print('Shape of 3D image: ', zstack.shape)
+print('Mean', zstack.getMean())
 
 print('... Computing std deviations')
 dev = zstack.deviationAlongZ()
 print('Shape of 2D image of std dev: ', dev.shape)
 
 # newFolderPath = input('New figure path: ')
-newFolderPath = '%s/StandardDeviation' % r"C:\Users\Ariane Gouin\Documents\ULaval\2018_Ete\cervo\P3_francois\results"
+newFolderPath = '%s/StandardDeviation' % r"C:\Users\Ariane Gouin\Documents\ULaval\2018_Ete\cervo\P3_francois\fridayresults"
 if not os.path.exists(newFolderPath):
     os.makedirs(newFolderPath)
 

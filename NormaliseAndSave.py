@@ -10,7 +10,7 @@ newFolderPath = '%s/normalised' % wantedFolder.directory
 if not os.path.exists(newFolderPath):
     os.makedirs(newFolderPath)
 
-print('... Processing images')
+print('... Normalise each image')
 
 arrays = []
 for j in sorted(wantedFiles):
@@ -29,6 +29,7 @@ print('... Stacking images')
 zstack = StackedArray(arrays)
 print('Shape of 3D image: ', zstack.shape)
 
+print('... Normalise Z-stack')
 zstack.normalise()
 
 i = -1

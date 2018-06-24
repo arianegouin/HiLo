@@ -42,6 +42,9 @@ for j in sorted(wantedFiles):
 
     print(name)
 
+    if exptime == 40:
+        continue
+
     if illtype is True:
         xSpeckles.append(exptime)
         ySpeckles.append(mean)
@@ -63,9 +66,11 @@ plt.plot(xUniform, yUniform, 'o', markersize=5, markerfacecolor='blue', markered
 plt.tick_params(axis='both', direction='in')
 plt.xlabel('Exposure time [ms]')
 plt.ylabel('Std dev (mean)')
+plt.tight_layout()
 plt.legend()
+
+
+
+plt.savefig('%s/%s' % (wantedFolder.directory, '#ALLexcept40ms'), bbox_inches='tight')
 # plt.show()
-
-
-plt.savefig('%s/%s' % (wantedFolder.directory, '#ALL'), bbox_inches='tight')
 

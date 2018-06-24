@@ -13,7 +13,8 @@ class Folder:
     def __init__(self):
         root = tk.Tk()
         root.withdraw()
-        root.directory = filedialog.askdirectory(initialdir=os.getcwd(), title="Select folder")
+        root.directory = filedialog.askdirectory(
+            initialdir=os.getcwd(), title="Select folder")
         self.directory = root.directory
 
     def iterateThroughFolder(self, extension):
@@ -30,6 +31,12 @@ class Folder:
             else:
                 continue
         return wantedFiles
+
+    def getFiles(self, extension):
+        for file in os.listdir(self.directory):
+            filestring = os.fsdecode(file)
+            if filestring.endswith(".%s" % extension):
+                yield self.directory, file
 
 
 class File:

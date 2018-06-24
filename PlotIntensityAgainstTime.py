@@ -9,6 +9,7 @@ print('... Uploading datafiles from %s' % wantedFolder.directory)
 wantedFiles = wantedFolder.iterateThroughFolder('tiff')
 
 exptime = float(input('Exposure time (ms): ')) / 1000
+newFigName = input('New figure name: ')
 
 print('... Processing images')
 
@@ -32,7 +33,7 @@ for j in sorted(wantedFiles):
 mean = numpy.mean(y)
 y = y / mean
 
-plt.plot(x, y, marker='o', colorfacemarker='black', markersize=5, linestyle='-', linecolor='blue', label='%s ms' % (exptime*1000))
+plt.plot(x, y, marker='o', markerfacecolor='white', markersize=3, linestyle='-', linewidth=1, label='%s' % newFigName)
 
 plt.tick_params(axis='both', direction='in')
 plt.xlabel('Time [s]')
@@ -43,6 +44,5 @@ newFigPath = '%s/IntensityAgainstTime' % r"C:\Users\Ariane Gouin\Documents\ULava
 if not os.path.exists(newFigPath):
     os.makedirs(newFigPath)
 
-newFigName = input('New figure name: ')
 plt.savefig(os.path.join(newFigPath, newFigName), bbox_inches='tight')
 print('... Has saved figure to %s' % os.path.join(newFigPath, newFigName))

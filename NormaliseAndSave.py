@@ -2,7 +2,6 @@ from hilo import Folder, TiffImage, TiffArray, StackedArray
 import os
 
 wantedFolder = Folder()
-
 print('... Uploading datafiles from %s' % wantedFolder.directory)
 wantedFiles = wantedFolder.iterateThroughFolder('tiff')
 

@@ -1,21 +1,32 @@
-from hilo import File, TiffImage
+from hilo import File, Folder, TiffImage
 from matplotlib import pyplot as plt
 import numpy
 
-wantedFile = File()
-print("... File '%s' uploaded from '%s'" % (wantedFile.name, wantedFile.directory))
+# wantedFile = File()
+# print("... File '%s' uploaded from '%s'" % (wantedFile.name, wantedFile.directory))
 
-image = TiffImage('%s/%s' % (wantedFile.directory, wantedFile.name))
-array = image.returnArray()
+wantedFolder = Folder()
+print('... Uploading datafiles from %s' % wantedFolder.directory)
 
-meandev = numpy.mean(array)
+for i in wantedFolder.getFiles('tiff'):
+    directory, name = i
+    nameNoExtension = name.split( '.')[0]
 
-plt.hist(array.ravel(), bins=10000)
+    image = TiffImage('%s/%s' % (directory, name))
+    array = image.returnArray()
 
-plt.title('Distribution (mean=%s)' % meandev)
-plt.xlabel('Standard deviations')
+    meandev = numpy.mean(array)
 
-nameNoExtension = wantedFile.name.split('.')[0]
-plt.savefig('%s/%s' % (wantedFile.directory, nameNoExtension))
-# plt.show()
-print("... Has saved figure '%s' to '%s" % (nameNoExtension, wantedFile.directory))
+    # maximum = numpy.amax(array)
+    # minimum = numpy.amin(array)
+
+    plt.hist(array.ravel(), bins=200, label='%s' % nameNoExtension)
+
+    plt.title('Distribution (mean=%s)' % meandev)
+    plt.xlabel('Standard deviations')
+    plt.ylabel('Number of pixels')
+    plt.legend()
+
+    plt.savefig('%s/%s' % (directory, nameNoExtension))
+    plt.show()
+    print("... Has saved figure '%s' to '%s" % (nameNoExtension, directory))

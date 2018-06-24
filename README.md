@@ -28,6 +28,6 @@ Python files should be run in this order:
 
 ### Notes
 - hilo.py contains all Classes
-- 'optional' means subsequent py can be run without. It usually plots something to help visualise what has happened.
+- 'optional' means you can skip this py and go run the next py without problems. It usually plots something to help visualise what has happened.
 - [1] The tiff images should be named: *0.tiff*, *1.tiff*, *2.tiff*, etc.
 - [2] The name should contain the illumination type (*speckles* or *uniform*) and the exposure time (in ms). It could have other words but no other numbers. E.g.: *200ms speckles.tiff*, *uniform 400 blabla.tiff*. This is important for the PlotStdevAgainstTime.py to run correctly.

@@ -24,7 +24,7 @@ Python files should be run in this order:
 
 ### 5. PlotStdevAgainstTime.py  
 - input with pop-up window: folder path of the tiff images containing the standard deviations[2]  
-- output: Return the graph of standard deviations against the exposure time.  
+- output: Return the graph of standard deviations against the exposure time. Save the pyplot figure in the same folder as the input folder. 
 
 ### Notes
 - hilo.py contains all Classes

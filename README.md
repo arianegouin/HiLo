@@ -11,7 +11,7 @@ Python files should be run in this order:
 
 ### 2. NormaliseAndSave.py  
 - input with pop-up window: folder path of the acquired tiff images[1]  
-- output: Divide each image by its mean. Then divide all images by the z-stack mean. Save each image in a folder named 'normalised' that is created in the folder chosen as input earlier. Each normalised image has the same name as its original image. 
+- output: Divide each image by its mean. Then divide all images by the z-stack mean. Save each image in a folder named 'normalised' that is created in input folder. Each normalised image has the same name as its original image. 
 
 ### 3. StdevAndSave.py  
 - input with pop-up window: folder path containing the normalised tiff images[1]
@@ -24,7 +24,7 @@ Python files should be run in this order:
 
 ### 5. PlotStdevAgainstExposureTime.py  
 - input with pop-up window: folder path of the tiff images containing the standard deviations[2]  
-- output: Return the graph of standard deviations against the exposure time. Save the pyplot figure in the same folder as the input folder. 
+- output: Return the graph of standard deviations against the exposure time. Save the pyplot figure in the input folder.
 
 ### Notes
 - hilo.py contains all Classes

@@ -1,5 +1,6 @@
 from hilo import Folder, TiffImage
 from matplotlib import pyplot as plt
+from scipy.optimize import curve_fit
 
 
 def getIlluminationType(string):
@@ -30,6 +31,8 @@ ySpeckles = []
 xUniform = []
 yUniform = []
 
+newFigName = '#ALL'
+
 for j in sorted(wantedFiles):
     directory, name = wantedFiles[j]
 
@@ -42,8 +45,9 @@ for j in sorted(wantedFiles):
 
     print(name)
 
-    if exptime == 40:
-        continue
+    # if exptime == 40:
+    #     newFigName = '#ALLexcept40'
+    #     continue
 
     if illtype is True:
         xSpeckles.append(exptime)
@@ -60,17 +64,33 @@ print(len(xUniform), len(yUniform))
 # print(xUniform, yUniform)
 
 
+def function(x, a, b):
+    return a / (x - b)**0.5
+
+popt, pcov = curve_fit(function, xSpeckles, ySpeckles)
+xxSpeckles = sorted(xSpeckles)
+yySpeckles = [function(x, *popt) for x in xxSpeckles]
+plt.plot(xxSpeckles, yySpeckles, 'r-', linewidth=1, label='fit: a=%.1f, b=%.1f' % tuple(popt))
+
+popt, pcov = curve_fit(function, xUniform, yUniform)
+xxUniform = sorted(xUniform)
+yyUniform = [function(x, *popt) for x in xxUniform]
+plt.plot(xxUniform, yyUniform, 'b-', linewidth=1, label='fit: a=%.1f, b=%.1f' % tuple(popt))
+
+
 plt.plot(xSpeckles, ySpeckles, 'o', markersize=10, markerfacecolor='red', markeredgecolor='white', label='Speckles')
 plt.plot(xUniform, yUniform, 'o', markersize=5, markerfacecolor='blue', markeredgecolor='white', label='Uniform')
+
 
 plt.tick_params(axis='both', direction='in')
 plt.xlabel('Exposure time [ms]')
 plt.ylabel('Std dev (mean)')
 plt.tight_layout()
-plt.legend()
+plt.legend(loc=1, edgecolor='black', title='fit: y = a / (x - b)^0.5')
 
 
 
-plt.savefig('%s/%s' % (wantedFolder.directory, '#ALLexcept40ms'), bbox_inches='tight')
-# plt.show()
+plt.savefig('%s/%s' % (wantedFolder.directory, newFigName), bbox_inches='tight')
+plt.show()
+print("... Has saved figure '%s' to '%s" % (newFigName, wantedFolder.directory))
 

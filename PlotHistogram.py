@@ -25,7 +25,7 @@ for i in wantedFolder.getFiles('tiff'):
     plt.title('Distribution (mean=%s)' % meandev)
     plt.xlabel('Standard deviations')
     plt.ylabel('Number of pixels')
-    plt.legend()
+    plt.legend(loc=1, edgecolor='black')
 
     plt.savefig('%s/%s' % (directory, nameNoExtension))
     plt.show()

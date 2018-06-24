@@ -5,8 +5,8 @@
 Python files should be run in this order:
 
 ### 1. PlotIntensityAgainstTime.py (optional)  
-- input with pop-up window: folder path of the acquired tiff images[1]  
-- input with python console: exposure time in ms, illumination type (*speckles* or *uniform*), folder path for the pyplot figure
+- input with pop-up window: folder path of the acquired tiff images[1], folder path where to save the pyplot figure  
+- input with python console: exposure time in ms, illumination type (*speckles* or *uniform*)  
 - output: Sum all pixel values for each image of the stack and divide a stack by its mean. Return the graph against the time. Save the pyplot figure as *{exposure time}ms {illumination type}.png*.  
 
 ### 2. NormaliseAndSave.py  
@@ -14,8 +14,8 @@ Python files should be run in this order:
 - output: Divide each image by its mean. Then divide all images by the z-stack mean. Save each image in a folder named 'normalised' that is created in input folder. Each normalised image has the same name as its original image. 
 
 ### 3. StdevAndSave.py  
-- input with pop-up window: folder path containing the normalised tiff images[1]
-- input with python console: folder path for the tiff image, exposure time in ms, illumination type (*speckles* or *uniform*) 
+- input with pop-up window: folder path containing the normalised tiff images[1], folder path where to save the tiff image  
+- input with python console: exposure time in ms, illumination type (*speckles* or *uniform*) 
 - output: Compute the standard deviation for each pixel through the Z-stack (along Z axis). Save the data as a tiff image with name *{exposure time}ms {illumination type}.tiff*
 
 ### 4. PlotHistogram.py (optional)  

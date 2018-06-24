@@ -19,8 +19,8 @@ Python files should be run in this order:
 - output: Compute the standard deviation for each pixel through the Z-stack (along Z axis). Save the data as a tiff image.  
 
 ### 4. PlotHistogram.py (optional)  
-- input with pop-up window: file path of the tiff image containing the standard deviations  
-- output: Return the histogram of all standard deviations. Save the pyplot figure in the same folder as the input file and with the same name.  
+- input with pop-up window: folder path of the tiff images containing their standard deviations  
+- output: Return the histogram of standard deviations for each image. Save the pyplot figures in the same folder with the same names as the input tiff images.  
 
 ### 5. PlotStdevAgainstTime.py  
 - input with pop-up window: folder path of the tiff images containing the standard deviations[2]  

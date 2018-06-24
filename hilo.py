@@ -10,12 +10,14 @@ import itertools
 
 class Folder:
 
-    def __init__(self):
+    def __init__(self, message):
         root = tk.Tk()
         root.withdraw()
         root.directory = filedialog.askdirectory(
-            initialdir=os.getcwd(), title="Select folder")
+            initialdir=os.getcwd(), title="%s" % message)
         self.directory = root.directory
+
+
 
     def iterateThroughFolder(self, extension):
         wantedFiles = {}

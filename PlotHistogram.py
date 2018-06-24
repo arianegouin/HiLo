@@ -11,6 +11,7 @@ print('... Uploading datafiles from %s' % wantedFolder.directory)
 for i in wantedFolder.getFiles('tiff'):
     directory, name = i
     nameNoExtension = name.split( '.')[0]
+    exptime, illumtype = nameNoExtension.split(' ')
 
     image = TiffImage('%s/%s' % (directory, name))
     array = image.returnArray()
@@ -20,7 +21,7 @@ for i in wantedFolder.getFiles('tiff'):
     # maximum = numpy.amax(array)
     # minimum = numpy.amin(array)
 
-    plt.hist(array.ravel(), bins=200, label='%s' % nameNoExtension)
+    plt.hist(array.ravel(), bins=200, label='Exposure time = %s \nIllumination type = %s' % (exptime, illumtype))
 
     plt.title('Distribution (mean=%s)' % meandev)
     plt.xlabel('Standard deviations')

@@ -2,10 +2,17 @@ from hilo import Folder, TiffImage, StackedArray
 import os
 
 
-wantedFolder = Folder()
-
+wantedFolder = Folder('Select folder with acquired data.')
 print('... Uploading datafiles from %s' % wantedFolder.directory)
 wantedFiles = wantedFolder.iterateThroughFolder('tiff')
+
+newFolderPath = '%s/StandardDeviation' % Folder('Select folder where tiff image will be saved.').directory
+# newFolderPath = '%s/StandardDeviation' % r"C:\Users\Ariane Gouin\Documents\ULaval\2018_Ete\cervo\P3_francois\fridayresults"
+if not os.path.exists(newFolderPath):
+    os.makedirs(newFolderPath)
+
+exptime = input('Exposure time (ms): ')
+illumtype = input('Illumination type (speckles / uniform): ')
 
 print('... Processing images')
 
@@ -28,11 +35,6 @@ print('... Computing std deviations')
 dev = zstack.deviationAlongZ()
 print('Shape of 2D image of std dev: ', dev.shape)
 
-# newFolderPath = input('New figure path: ')
-newFolderPath = '%s/StandardDeviation' % r"C:\Users\Ariane Gouin\Documents\ULaval\2018_Ete\cervo\P3_francois\fridayresults"
-if not os.path.exists(newFolderPath):
-    os.makedirs(newFolderPath)
-
-name = '%s.tiff' % input('Tiff file of standard deviations should be named: ')
+name = '%sms %s.tiff' % (exptime, illumtype)
 dev.saveImage('%s/%s' % (newFolderPath, name))
-print('Tiff image of standard deviation for each pixel saved at %s/%s' % (newFolderPath, name))
+print("... Has saved tiff image of standard deviation for each pixel '%s' at %s" % (name, newFolderPath))

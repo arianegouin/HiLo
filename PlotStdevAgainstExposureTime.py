@@ -86,7 +86,7 @@ plt.tick_params(axis='both', direction='in')
 plt.xlabel('Exposure time [ms]')
 plt.ylabel('Std dev (mean)')
 plt.tight_layout()
-plt.legend(loc=1, edgecolor='black', title='fit: y = a / (x - b)^0.5')
+plt.legend(loc=0, edgecolor='black', title='fit: y = a / (x - b)^0.5')
 
 
 

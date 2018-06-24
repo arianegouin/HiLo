@@ -45,4 +45,5 @@ if not os.path.exists(newFigPath):
     os.makedirs(newFigPath)
 
 plt.savefig(os.path.join(newFigPath, newFigName), bbox_inches='tight')
+plt.show()
 print('... Has saved figure to %s' % os.path.join(newFigPath, newFigName))

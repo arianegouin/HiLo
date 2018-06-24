@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d262995-6a13-4483-a4cc-a25ed65d131e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NormaliseAndSave.py" beforeDir="false" afterPath="$PROJECT_DIR$/NormaliseAndSave.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlotHistogram.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlotHistogram.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlotIntensityAgainstTime.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlotIntensityAgainstTime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlotStdevAgainstTime.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlotStdevAgainstTime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hilo.py" beforeDir="false" afterPath="$PROJECT_DIR$/hilo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +15,8 @@
     <SUITE FILE_PATH="coverage/HiLo$IntensityAgainstTime.coverage" NAME="IntensityAgainstTime Coverage Results" MODIFIED="1529588540316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/HiLo$NormaliseAndSave.coverage" NAME="NormaliseAndSave Coverage Results" MODIFIED="1529784288641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/HiLo$NormaliseStackAndSave.coverage" NAME="NormaliseStackAndSave Coverage Results" MODIFIED="1529690460008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/HiLo$PlotIntensityAgainstTime.coverage" NAME="PlotIntensityAgainstTime Coverage Results" MODIFIED="1529794362395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/HiLo$hilo.coverage" NAME="hilo Coverage Results" MODIFIED="1529799303347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HiLo$PlotIntensityAgainstTime.coverage" NAME="PlotIntensityAgainstTime Coverage Results" MODIFIED="1529800680439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/HiLo$MeanAndSave.coverage" NAME="MeanAndSave Coverage Results" MODIFIED="1529666040688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/HiLo$NormaliseByMean.coverage" NAME="NormaliseByMean Coverage Results" MODIFIED="1529676681314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/HiLo$PlotStdevAgainstTime.coverage" NAME="PlotStdevAgainstTime Coverage Results" MODIFIED="1529796100894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -45,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlotIntensityAgainstTime.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PlotIntensityAgainstTime.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PlotIntensityAgainstTime.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="355">
+              <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -78,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlotHistogram.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PlotHistogram.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlotHistogram.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+            <state relative-caret-position="272">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -150,8 +145,8 @@
         <option value="$PROJECT_DIR$/PlotStdevAgainstTime.py" />
         <option value="$PROJECT_DIR$/NormaliseAndSave.py" />
         <option value="$PROJECT_DIR$/hilo.py" />
-        <option value="$PROJECT_DIR$/PlotIntensityAgainstTime.py" />
         <option value="$PROJECT_DIR$/PlotHistogram.py" />
+        <option value="$PROJECT_DIR$/PlotIntensityAgainstTime.py" />
       </list>
     </option>
   </component>
@@ -212,7 +207,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.PlotHistogram">
+  <component name="RunManager" selected="Python.PlotIntensityAgainstTime">
     <configuration name="PlotHistogram" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PointSpreadFunction" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -368,10 +363,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.PlotIntensityAgainstTime" />
         <item itemvalue="Python.PlotHistogram" />
         <item itemvalue="Python.hilo" />
         <item itemvalue="Python.PlotStdevAgainstTime" />
-        <item itemvalue="Python.PlotIntensityAgainstTime" />
         <item itemvalue="Python.StdevAndSave" />
       </list>
     </recent_temporary>
@@ -400,19 +395,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="848" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3280116" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32946298" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3280116" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.41509435" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29027575" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3280116" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16823056" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16823056" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.14142092" />
+      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.43967828" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -593,22 +587,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlotIntensityAgainstTime.py">
+    <entry file="file://$PROJECT_DIR$/PlotHistogram.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlotHistogram.py">
+    <entry file="file://$PROJECT_DIR$/PlotIntensityAgainstTime.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        <state relative-caret-position="355">
+          <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>

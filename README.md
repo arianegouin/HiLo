@@ -22,7 +22,7 @@ Python files should be run in this order:
 - input with pop-up window: folder path of the tiff images containing their standard deviations  
 - output: Return the histogram of standard deviations for each image. Save the pyplot figures in the same folder with the same names as the input tiff images.  
 
-### 5. PlotStdevAgainstTime.py  
+### 5. PlotStdevAgainstExposureTime.py  
 - input with pop-up window: folder path of the tiff images containing the standard deviations[2]  
 - output: Return the graph of standard deviations against the exposure time. Save the pyplot figure in the same folder as the input folder. 
 

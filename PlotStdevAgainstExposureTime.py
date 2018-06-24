@@ -46,7 +46,7 @@ for j in sorted(wantedFiles):
     print(name)
 
     # if exptime == 40:
-    #     newFigName = '#ALLexcept40'
+    #     newFigName = '#ALLexcept40ms'
     #     continue
 
     if illtype is True:

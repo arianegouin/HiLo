@@ -7,7 +7,7 @@ Python files should be run in this order:
 ### 1. PlotIntensityAgainstTime.py (optional)  
 - input with pop-up window: folder path of the acquired tiff images[1]  
 - input with python console: exposure time in ms, folder path for the pyplot figure, name for the pyplot figure  
-- output: Sum all the pixel values for each image of the stack and divide them with their mean. Return the graph against the time. Save the pyplot figure.  
+- output: Sum all pixel values for each image of the stack and divide a stack by its mean. Return the graph against the time. Save the pyplot figure.  
 
 ### 2. NormaliseAndSave.py  
 - input with pop-up window: folder path of the acquired tiff images[1]  

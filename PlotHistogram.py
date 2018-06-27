@@ -5,7 +5,7 @@ import numpy
 # wantedFile = File()
 # print("... File '%s' uploaded from '%s'" % (wantedFile.name, wantedFile.directory))
 
-wantedFolder = Folder()
+wantedFolder = Folder('Select folder with std dev images.')
 print('... Uploading datafiles from %s' % wantedFolder.directory)
 
 for i in wantedFolder.getFiles('tiff'):

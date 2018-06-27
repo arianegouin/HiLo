@@ -49,4 +49,4 @@ plt.legend()
 
 plt.savefig('%s/%s' % (newFigPath, newFigName), bbox_inches='tight')
 plt.show()
-print('... Has saved figure to %s' % os.path.join(newFigPath, newFigName))
+print('... Has saved figure as %s' % os.path.join(newFigPath, newFigName))

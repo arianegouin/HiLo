@@ -1,44 +1,67 @@
 from PIL import Image
 import numpy
-from matplotlib import pyplot as plt
 import tkinter as tk
 from tkinter import filedialog
 import os
-import statistics
-import itertools
 
 
 class Folder:
 
-    def __init__(self, message):
+    def __init__(self, directory):
+        self.directory = directory
+
+    def chooseDirectory(self, message):
         root = tk.Tk()
         root.withdraw()
         root.directory = filedialog.askdirectory(
             initialdir=os.getcwd(), title="%s" % message)
         self.directory = root.directory
 
-
-
     def iterateThroughFolder(self, extension):
         wantedFiles = {}
-        for file in sorted(os.listdir(self.directory)):
-            filestring = os.fsdecode(file)
-            if filestring.endswith(".%s" % extension):
-                key = filestring.split('.')[0]
+        for element in sorted(os.listdir(self.directory)):
+            string = os.fsdecode(element)
+            if string.endswith(".%s" % extension):
+                key = string.split('.')[0]
                 try:
-                    key = float(key)
+                    key = int(key)
                 except ValueError:
                     pass
-                wantedFiles[key] = [self.directory, filestring]
+                wantedFiles[key] = string
             else:
                 continue
-        return wantedFiles
+        return self.directory, wantedFiles
+
+    def hasFolder(self):
+        for element in os.listdir(self.directory):
+            if not '.' in element:
+                # print(element, 'is a folder')
+                return True
+                pass
+
+    def getFolders(self):
+        folders = []
+        for element in os.listdir(self.directory):
+            if '.' in element:
+                # print('extension', element)
+                continue
+            folders.append(element)
+        return folders
+
+    def hasFile(self, extension):
+        for element in os.listdir(self.directory):
+            if '.%s' % extension in element:
+                # print(element, 'is a file')
+                return True
+                pass
 
     def getFiles(self, extension):
-        for file in os.listdir(self.directory):
-            filestring = os.fsdecode(file)
-            if filestring.endswith(".%s" % extension):
-                yield self.directory, file
+        files = []
+        for element in os.listdir(self.directory):
+            string = os.fsdecode(element)
+            if string.endswith(".%s" % extension):
+                files.append((self.directory, element))
+        return files
 
 
 class File:
@@ -61,12 +84,11 @@ class TiffImage:
 
     def returnArray(self):
         # return numpy.array(self.image, dtype='float32')
-        a = numpy.asarray(self.image)
-        # print(a.dtype)
+        a = numpy.asarray(self.image, dtype='float32')
         return a
 
     def turnIntoArray(self):
-        array = self.returnArray()
+        array = numpy.asarray(self.image, dtype='float32')
         return TiffArray(array)
 
     def close(self):
@@ -79,6 +101,7 @@ class TiffArray:
         self.array = array
 
         self.shape = self.array.shape
+        self.dtype = self.array.dtype
 
     def show(self):
         print(self.array)
@@ -103,10 +126,11 @@ class TiffArray:
 
 class StackedArray:
 
-    def __init__(self, stacks, *args):
-        self.stack = numpy.stack(stacks, axis=0)
+    def __init__(self, tiffarrays, *args):
+        self.stack = numpy.stack(tiffarrays, axis=0)
 
         self.shape = self.stack.shape
+        self.dtype = self.stack.dtype
 
     def __getitem__(self, key):
         return self.stack[int(key)]
@@ -114,25 +138,23 @@ class StackedArray:
     def show(self):
         print(self.stack)
 
-    def deviationAlongZ(self):
-        alldev = numpy.std(self.stack, axis=0)
-        # stacks = self.shape[0]
-        # lines = self.shape[1]
-        # columns = self.shape[2]
-        #
-        # alldev = numpy.zeros((lines, columns))
-        # for y, x in itertools.product(range(lines), range(columns)):
-        #     f = self.stack[:, y, x]
-        #     dev = numpy.std(f)
-        #     alldev[y, x] = dev
-        return TiffArray(alldev)
-
+    def getDeviationAlongZ(self):
+        return numpy.std(self.stack, axis=0)
 
     def getMax(self):
         return max([max(map(max, i)) for i in self.stack])
 
     def getMean(self):
         return numpy.mean(self.stack)
+
+    def getMeanAlongZ(self):
+        return numpy.mean(self.stack, axis=0)
+
+    def relativeDeviationAlongZ(self):
+        self.getMeanAlongZ()[self.getMeanAlongZ() == 0] = 999999
+        if 999999 in self.getMeanAlongZ():
+            print('0 were changed.')
+        return TiffArray(self.getDeviationAlongZ() / self.getMeanAlongZ())
 
     def normalise(self):
         self.stack = self.stack / self.getMean()

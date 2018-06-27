@@ -16,10 +16,10 @@ def getIlluminationType(string):
 
 
 def getExposureTime(string):
-    return float(''.join(i for i in string if i.isdigit()))
+    return int(''.join(i for i in string if i.isdigit()))
 
 
-wantedFolder = Folder()
+wantedFolder = Folder('Select folder where tiff images of standard deviations are.')
 print('... Uploading datafiles from %s' % wantedFolder.directory)
 wantedFiles = wantedFolder.iterateThroughFolder('tiff')
 
@@ -68,14 +68,16 @@ def function(x, a, b):
     return a / (x - b)**0.5
 
 popt, pcov = curve_fit(function, xSpeckles, ySpeckles)
-xxSpeckles = sorted(xSpeckles)
+xxSpeckles = [i for i in range(min(xSpeckles), max(xSpeckles), 1)]
+print(xxSpeckles)
 yySpeckles = [function(x, *popt) for x in xxSpeckles]
-plt.plot(xxSpeckles, yySpeckles, 'r-', linewidth=1, label='fit: a=%.1f, b=%.1f' % tuple(popt))
+print(yySpeckles)
+plt.plot(xxSpeckles, yySpeckles, 'r:', linewidth=1, label='fit: a=%.1f, b=%.1f' % tuple(popt))
 
 popt, pcov = curve_fit(function, xUniform, yUniform)
-xxUniform = sorted(xUniform)
+xxUniform = [i for i in range(min(xUniform), max(xUniform), 1)]
 yyUniform = [function(x, *popt) for x in xxUniform]
-plt.plot(xxUniform, yyUniform, 'b-', linewidth=1, label='fit: a=%.1f, b=%.1f' % tuple(popt))
+plt.plot(xxUniform, yyUniform, 'b:', linewidth=1, label='fit: a=%.1f, b=%.1f' % tuple(popt))
 
 
 plt.plot(xSpeckles, ySpeckles, 'o', markersize=10, markerfacecolor='red', markeredgecolor='white', label='Speckles')
@@ -86,7 +88,7 @@ plt.tick_params(axis='both', direction='in')
 plt.xlabel('Exposure time [ms]')
 plt.ylabel('Std dev (mean)')
 plt.tight_layout()
-plt.legend(loc=0, edgecolor='black', title='fit: y = a / (x - b)^0.5')
+plt.legend(loc=0, edgecolor='black', title='fit: $y = a / \sqrt{(x - b)}$')
 
 
 

@@ -42,3 +42,6 @@ print(f)
 print('\n')
 d = c.getRelativeDeviationAlongZ()
 d.show()
+
+
+print(9%3)

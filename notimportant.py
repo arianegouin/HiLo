@@ -1,15 +1,44 @@
 from hilo import *
+from matplotlib import pyplot as plt
 
+# wantedFolder = Folder(r"C:\Users\Ariane Gouin\Documents\ULaval\2018_Ete\cervo\P3_francois\friday\1300ms speckles gain1\Jun 22, 2018 10-17-54 AM\normalised")
+# wantedFiles = wantedFolder.iterateThroughFolder('tiff')
+# print(wantedFiles[1])
+#
+#
+# arrays = []
+# for i in sorted(wantedFiles[1]):
+#     image = TiffImage('%s/%s' % (wantedFiles[0], wantedFiles[1][i]))
+#     array = image.turnIntoArray()
+#     arrays.append(array.array)
+# #
+# print('stacking')
+# zstack = StackedArray(arrays)
+#
+# print('...')
+# dev = zstack.getRelativeDeviationAlongZ()
+#
+# print(dev.shape)
 
-foo_array = [38,26,14,55,31,0,15,8,0,0,0,18,40,27,3,19,0,49,29,21,5,38,29,17,16]
-foo = numpy.array(foo_array)
-# Compute the median of the non-zero elements
-m = 1111111
-# Assign the median to the zero elements
-foo[foo == 0] = m
+a = TiffArray(numpy.array([[0, 1, 1], [0, 1, 10]]))
+a.normalise()
+a.show()
+b = TiffArray(numpy.array([[1, 1, 1], [0, 1, 4]]))
+b.normalise()
+b.show()
+print('\n')
 
-if 38 in foo:
-    print('yes')
+c = StackedArray([a.array, b.array])
+print(c.getMean())
+print('stack')
+c.show()
 
-print(foo)
+print('\n')
+e = c.getDeviationAlongZ()
+print(e)
+f = c.getMeanAlongZ()
+print(f)
 
+print('\n')
+d = c.getRelativeDeviationAlongZ()
+d.show()

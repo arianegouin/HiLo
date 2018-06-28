@@ -1,6 +1,8 @@
 from hilo import *
 from matplotlib import pyplot as plt
 from matplotlib import rcParams
+rcParams['font.size'] = 18
+from scipy.optimize import curve_fit
 
 
 class hilo:
@@ -8,8 +10,8 @@ class hilo:
     def __init__(self):
         # self.mainFolder = Folder(os.getcwd())
         # self.mainFolder.chooseDirectory('Select the main folder.')
-        # self.mainFolder = Folder(r"C:\Users\Ariane Gouin\Documents\doc")
-        self.mainFolder = Folder(r"C:\Users\Ariane Gouin\Documents\ULaval\2018_Ete\cervo\P3_francois\friday")
+        self.mainFolder = Folder(r"C:\Users\Ariane Gouin\Documents\doc")
+        # self.mainFolder = Folder(r"C:\Users\Ariane Gouin\Documents\ULaval\2018_Ete\cervo\P3_francois\friday")
 
         print('The main folder is: ', self.mainFolder.directory)
 
@@ -27,6 +29,29 @@ class hilo:
     @staticmethod
     def getExposureTime(string):
         return int(string.split('ms')[0])
+
+    @staticmethod
+    def createFolder(path):
+        if not os.path.exists(path):
+            os.makedirs(path)
+
+    @staticmethod
+    def setPlotParams(xlabel, ylabel, legendtitle=None):
+        plt.tick_params(axis='both', direction='in')
+        plt.legend(loc=0, edgecolor='black', fancybox=False, title=legendtitle)
+        plt.xlabel(xlabel)
+        plt.ylabel(ylabel)
+
+    @staticmethod
+    def saveFigure(newFolderPath, exptime=None,illumtype=None, othername=None, show=False):
+        if othername is not None:
+            name = othername
+        else:
+            name = '%sms %s' % (exptime, illumtype)
+        hilo.createFolder(newFolderPath)
+        plt.savefig('%s/%s' % (newFolderPath, name), bbox_inches='tight')
+        if show is True:
+            plt.show()
 
     def GetDataPaths(self):
         subFolders = [Folder('%s/%s' % (self.mainFolder.directory, e)) for e in self.mainFolder.getFolders()]
@@ -55,45 +80,62 @@ class hilo:
             image.close()
             yield j, array
 
-    @staticmethod
-    def createFolder(path):
-        if not os.path.exists(path):
-            os.makedirs(path)
+
+    def ReturnMax(self, dataset):
+        maxx = []
+        for j, array in self.GetDataAsArrays(dataset):
+            maxx.append(array.getMax())
+        return maxx, numpy.amax(maxx)
+
+    def ReturnTimes(self, dataset):
+        exptime = dataset[0]
+
+        x = []
+        for j, array in self.GetDataAsArrays(dataset):
+            x.append(j * exptime / 1000)
+
+        return x
+
+    def ReturnMeans(self, dataset):
+        y = []
+        for j, array in self.GetDataAsArrays(dataset):
+            y.append(array.getMean())
+
+        return y, numpy.mean(y)
 
     def PlotIntensityAgainstTime(self):
 
+        print('... Plotting IntensityAgainstTime')
+
         newFolderPath = '%s/%sResults/IntensityAgainstTime' % (os.path.dirname(self.mainFolder.directory), os.path.basename(self.mainFolder.directory))
-        hilo.createFolder(newFolderPath)
 
         for dataset in self.raw:
-            exptime = dataset[0]
-            illumtype = dataset[1]
+            exptime, illumtype = dataset
 
-            x = []
-            y = []
-            for j, array in self.GetDataAsArrays(dataset):
-                x.append(j * exptime / 1000)
-                mean = array.getMean()
-                y.append(mean)
-            mean = numpy.mean(y)
-            y = y / mean
+            x = self.ReturnTimes(dataset)
+            y, m = self.ReturnMeans(dataset)
+            y = y / numpy.mean(y)
 
-            plt.plot(x, y, marker='o', markerfacecolor='white', markersize=3, linestyle='-', linewidth=1,
-                     label='Exposure time = %sms \nIllumination type = %s' % (exptime, illumtype))
-            rcParams.update({'font.size': 18})
-            plt.xlabel('Time [s]')
-            plt.ylabel("Mean of pixels intensity (normalised)")
-            plt.tick_params(axis='both', direction='in')
-            plt.legend()
+            maxx, maxxi = self.ReturnMax(dataset)
+            print('max of max', maxxi)
 
-            name = '%sms %s' % (exptime, illumtype)
-            plt.savefig('%s/%s' % (newFolderPath, name), bbox_inches='tight')
-            plt.show()
+            plt.figure()
+            plt.plot(x, y, linestyle='-', linewidth=1,
+                     label='Exposure time = %sms \nIllumination = %s' % (exptime, illumtype))
+            hilo.setPlotParams(xlabel='Time [s]', ylabel='Intensity (normalised mean)')
+
+            hilo.saveFigure(newFolderPath=newFolderPath, exptime=exptime, illumtype=illumtype, show=True)
+
+            print('... ... Has plot', dataset)
 
         print('... Has saved figures at %s' % newFolderPath)
 
+
     def NormaliseAndSave(self):
+
         for dataset in self.raw:
+
+            print('... ... Has normalised', dataset)
 
             newFolderPath = '%s/normalised' % self.raw[dataset][0]
             hilo.createFolder(newFolderPath)
@@ -102,12 +144,11 @@ class hilo:
                 array.normalise()
                 array.saveImage('%s/%s.tiff' % (newFolderPath, j))
                 yield j, array
-
             yield 'dataset', dataset
 
         print('... Has saved normalised datafiles at .../normalised')
 
-    def GetStddevAndSave(self):
+    def GetStdevAndSave(self):
 
         newFolderPath = '%s/%sResults/Stddev' % (os.path.dirname(self.mainFolder.directory), os.path.basename(self.mainFolder.directory))
         hilo.createFolder(newFolderPath)
@@ -123,47 +164,100 @@ class hilo:
             if newdataset is False:
                 arrays.append(i[1].array)
             else:
-                print(i[1])
                 zstack = StackedArray(arrays)
+                # print('z stack mean', zstack.getMean())
+                print('... ... Has stacked', i[1])
                 arrays = []
 
-                dev = zstack.relativeDeviationAlongZ()
-                # print('Shape of 2D image of std dev: ', dev.shape)
+                dev = zstack.getRelativeDeviationAlongZ()
+                # print('std dev max, min', dev.getMax(), dev.getMin())
 
-                exptime = i[1][0]
-                illumtype = i[1][1]
-                name = '%sms %s.tiff' % (exptime, illumtype)
-                dev.saveImage('%s/%s' % (newFolderPath, name))
+                dev.saveImage('%s/%sms %s.tiff' % (newFolderPath, i[1][0], i[1][1]))
+                print('... ... Has saved std dev of', i[1])
+
+                yield i[1], dev
 
         print("... Has saved tiff images of relative standard deviation at %s" % newFolderPath)
 
-    def PlotHistogram(self):
+    @staticmethod
+    def plotHistogram(dataset, dev, newFolderPath):
 
-        newFolderPath = '%s/%sResults/Stddev' % (
-        os.path.dirname(self.mainFolder.directory), os.path.basename(self.mainFolder.directory))
-        if not os.path.exists(newFolderPath):
-            os.makedirs(newFolderPath)
+        exptime, illumtype = dataset
 
-        rcParams.update({'font.size': 18})
-        plt.xlabel('Standard deviations')
-        plt.ylabel('Number of pixels')
+        meandev = dev.getMean()
+        dev.ravel()
 
-        allStdev = self.GetStddevAndSave()
-        for dataset in allStdev:
-            exptime = dataset[0]
-            illumtype = dataset[1]
+        plt.figure()
+        plt.hist(dev.array, bins=100,
+                 label='Exposure time = %sms \nIllumination = %s' % (exptime, illumtype))
+        hilo.setPlotParams(xlabel='Std dev', ylabel='Number of pixels')
+        plt.title('Distribution (mean=%s)' % meandev)
 
-            array = allStdev[dataset].array
-            meandev = numpy.mean(array)
-            plt.hist(array.ravel(), bins=200,
-                     label='Exposure time = %s \nIllumination type = %s' % (exptime, illumtype))
-            plt.title('Distribution (mean=%s)' % meandev)
-            plt.legend(loc=1, edgecolor='black')
+        hilo.saveFigure(newFolderPath=newFolderPath, exptime=exptime, illumtype=illumtype, show=True)
 
-            name = '%sms %s' % (exptime, illumtype)
-            plt.savefig('%s/%s' % (newFolderPath, name), bbox_inches='tight')
-            plt.show()
-        print("... Has saved histograms to '%s" % newFolderPath)
+        print('... ... Has saved histogram for', dataset)
+        print('\n')
+
+    def PlotDistributionOfStdev(self):
+        newFolderPath = '%s/%sResults/Stddev' % (os.path.dirname(self.mainFolder.directory), os.path.basename(self.mainFolder.directory))
+        for dataset, dev in self.GetStdevAndSave():
+            hilo.plotHistogram(dataset, dev, newFolderPath)
+        print("... Has saved histograms to '%s'" % newFolderPath)
+
+
+    @staticmethod
+    def getCurvefit(x, y):
+        def function(x, a, b):
+            return a / (x - b) ** 0.5
+
+        popt, pcov = curve_fit(function, x, y)
+        xx = [i for i in range(min(x), max(x), 1)]
+        yy = [function(x, *popt) for x in xx]
+
+        return xx, yy, popt
+
+    def PlotStddevAgainstExpTime(self):
+
+        newFolderPath = '%s/%sResults/Stddev' % (os.path.dirname(self.mainFolder.directory), os.path.basename(self.mainFolder.directory))
+
+        xSpeckles = []
+        ySpeckles = []
+
+        xUniform = []
+        yUniform = []
+
+        for dataset, dev in self.GetStdevAndSave():
+
+            hilo.plotHistogram(dataset, dev, newFolderPath)
+
+            exptime, illumtype = dataset
+            # if exptime == 40:
+            #     newFigName = '#ALLexcept40ms'
+            #     continue
+
+            if illumtype is 'speckles':
+                xSpeckles.append(int(exptime))
+                ySpeckles.append(dev.getMean())
+            elif illumtype is 'uniform':
+                xUniform.append(int(exptime))
+                yUniform.append(dev.getMean())
+            else:
+                continue
+
+        xxSpeckles, yySpeckles, popt = hilo.getCurvefit(xSpeckles, ySpeckles)
+        plt.plot(xxSpeckles, yySpeckles, 'r:', linewidth=1, label='fit: a=%.1f, b=%.1f' % tuple(popt))
+        xxUniform, yyUniform, popt = hilo.getCurvefit(xUniform, yUniform)
+        plt.plot(xxUniform, yyUniform, 'b:', linewidth=1, label='fit: a=%.1f, b=%.1f' % tuple(popt))
+
+        plt.plot(xSpeckles, ySpeckles, 'o', markersize=10, markerfacecolor='red', markeredgecolor='white',
+                 label='Speckles')
+        plt.plot(xUniform, yUniform, 'o', markersize=5, markerfacecolor='blue', markeredgecolor='white',
+                 label='Uniform')
+
+        hilo.setPlotParams(xlabel='Exposure time [ms]', ylabel='Std dev (mean)', legendtitle='fit: $y = a / \sqrt{(x - b)}$')
+
+        hilo.saveFigure(newFolderPath=newFolderPath, othername='#ALL', show=True)
+        print("... Has saved figure to '%s" % newFolderPath)
 
 
 a = hilo()
@@ -171,9 +265,12 @@ a = hilo()
 # for i in b:
 #     d = a.GetDataAsArrays(i)
 # d = a.PlotIntensityAgainstTime()
-e = a.NormaliseAndSave()
+# e = a.NormaliseAndSave()
 # for i in e:
-#     print(i)
-# f = a.GetStddevAndSave()
-# g = a.PlotHistogram()
+#     pass
+# f = a.GetStdevAndSave()
+# for i in f:
+#     pass
+# g = a.PlotDistributionOfStdev()
+h = a.PlotStddevAgainstExpTime()
 

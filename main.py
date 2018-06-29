@@ -1,17 +1,17 @@
 from hilo import *
 from matplotlib import pyplot as plt
 from matplotlib import rcParams
-rcParams['font.size'] = 18
+rcParams['font.size'] = 14
 from scipy.optimize import curve_fit
 
 
 class hilo:
 
     def __init__(self):
-        # self.mainFolder = Folder(os.getcwd())
-        # self.mainFolder.chooseDirectory('Select the main folder.')
+        self.mainFolder = Folder(os.getcwd())
+        self.mainFolder.chooseDirectory('Select the main folder.')
         # self.mainFolder = Folder(r"C:\Users\Ariane Gouin\Documents\doc")
-        self.mainFolder = Folder(r"C:\Users\Ariane Gouin\Documents\ULaval\2018_Ete\cervo\P3_francois\friday")
+        # self.mainFolder = Folder(r"C:\Users\Ariane Gouin\Documents\ULaval\2018_Ete\cervo\P3_francois\thursday_data")
 
         print('The main folder is: ', self.mainFolder.directory)
 
@@ -38,12 +38,13 @@ class hilo:
     @staticmethod
     def setPlotParams(xlabel, ylabel, legendtitle=None):
         plt.tick_params(axis='both', direction='in')
-        plt.legend(loc=0, edgecolor='black', fancybox=False, title=legendtitle)
+        legend = plt.legend(loc=0, edgecolor='black', fancybox=False, title=legendtitle, handlelength=0.7)
         plt.xlabel(xlabel)
         plt.ylabel(ylabel)
+        return legend
 
     @staticmethod
-    def saveFigure(newFolderPath, exptime=None,illumtype=None, othername=None, show=False):
+    def saveFigure(newFolderPath, exptime=None, illumtype=None, othername=None, show=False):
         if othername is not None:
             name = othername
         else:
@@ -55,6 +56,9 @@ class hilo:
 
 
     def GetDataPaths(self):
+        ignore = input('You would like to not consider some datasets? (y / n) ')
+        ignoreDatasets = list(map(int, input("Enter exposure times separated by ',' of datasets you would like to ignore: ").split(','))) if ignore == 'y' else [0]
+
         subFolders = [Folder('%s/%s' % (self.mainFolder.directory, e)) for e in self.mainFolder.getFolders()]
 
         wantedData = {}
@@ -69,7 +73,8 @@ class hilo:
                 wantedFolder = Folder('%s/%s' % (subFolder.directory, subFolder.getFolders()[0]))
 
             wantedFiles = wantedFolder.iterateThroughFolder('tiff')
-            wantedData[exptime, illumtype] = wantedFiles
+            if exptime not in ignoreDatasets:
+                wantedData[exptime, illumtype] = wantedFiles
 
         return wantedData
 
@@ -118,7 +123,8 @@ class hilo:
 
             x = self.ReturnTimes(dataset)
             y, m = self.ReturnMeans(dataset)
-            y = y / numpy.mean(y)
+            y = y / m
+            print('mean of mean', m)
 
             maxx, maxxi = self.ReturnMax(dataset)
             print('max of max', maxxi)
@@ -127,6 +133,7 @@ class hilo:
             plt.plot(x, y, linestyle='-', linewidth=1,
                      label='Exposure time = %sms \nIllumination = %s' % (exptime, illumtype))
             hilo.setPlotParams(xlabel='Time [s]', ylabel='Intensity (normalised mean)')
+            plt.ylim((0.90, 1.10))
 
             hilo.saveFigure(newFolderPath=newFolderPath, exptime=exptime, illumtype=illumtype, show=True)
 
@@ -148,7 +155,6 @@ class hilo:
                 array.normalise()
                 array.saveImage('%s/%s.tiff' % (newFolderPath, j))
                 yield dataset, j, array
-            # yield 'dataset', dataset
 
         print('... Has saved normalised datafiles at .../normalised')
 
@@ -164,7 +170,7 @@ class hilo:
         if normalise == 'n':
             where = self.FindNormalisedData()
 
-        newFolderPath = '%s/%sResults/Stddev' % (os.path.dirname(self.mainFolder.directory), os.path.basename(self.mainFolder.directory))
+        newFolderPath = '%s/%sResults/Stdev' % (os.path.dirname(self.mainFolder.directory), os.path.basename(self.mainFolder.directory))
         hilo.createFolder(newFolderPath)
 
         nbOfImages = float(input('Number of images per dataset: '))
@@ -173,16 +179,13 @@ class hilo:
             exptime, illumtype = dataset
 
             arrays.append(tiffarray.array)
-            print(dataset, len(arrays))
 
             if len(arrays) == nbOfImages:
                 zstack = StackedArray(arrays)
-                # print('z stack mean', zstack.getMean())
                 print('... ... Has stacked', dataset)
                 arrays = []
 
                 dev = zstack.getRelativeDeviationAlongZ()
-                # print('std dev max, min', dev.getMax(), dev.getMin())
 
                 dev.saveImage('%s/%sms %s.tiff' % (newFolderPath, exptime, illumtype))
                 print('... ... Has saved std dev of', dataset)
@@ -211,7 +214,7 @@ class hilo:
         print('... ... Has saved histogram for', dataset)
 
     def FindStdevData(self):
-        folderPath = '%s/%sResults/Stddev' % (os.path.dirname(self.mainFolder.directory), os.path.basename(self.mainFolder.directory))
+        folderPath = '%s/%sResults/Stdev' % (os.path.dirname(self.mainFolder.directory), os.path.basename(self.mainFolder.directory))
         for dataset in self.raw:
             exptime, illumtype = dataset
             filePath = '%s/%sms %s.tiff' % (folderPath, exptime, illumtype)
@@ -221,7 +224,7 @@ class hilo:
             yield dataset, array
 
     def PlotDistributionOfStdev(self):
-        newFolderPath = '%s/%sResults/Stddev' % (os.path.dirname(self.mainFolder.directory), os.path.basename(self.mainFolder.directory))
+        newFolderPath = '%s/%sResults/Stdev' % (os.path.dirname(self.mainFolder.directory), os.path.basename(self.mainFolder.directory))
 
         normalise = input('Compute standard deviations (y) or go find computed standard deviations (n): ')
         where = self.GetStdevAndSave()
@@ -235,8 +238,8 @@ class hilo:
 
     @staticmethod
     def getCurvefit(x, y):
-        def function(x, a, b):
-            return a / (x - b) ** 0.5
+        def function(x, a, b, c):
+            return a / (x - b) ** 0.5 + c
 
         popt, pcov = curve_fit(function, x, y)
         xx = [i for i in range(min(x), max(x), 1)]
@@ -244,9 +247,9 @@ class hilo:
 
         return xx, yy, popt
 
-    def PlotStddevAgainstExpTime(self):
+    def PlotStdevAgainstExpTime(self):
 
-        newFolderPath = '%s/%sResults/Stddev' % (os.path.dirname(self.mainFolder.directory), os.path.basename(self.mainFolder.directory))
+        newFolderPath = '%s/%sResults/Stdev' % (os.path.dirname(self.mainFolder.directory), os.path.basename(self.mainFolder.directory))
 
         normalise = input('Compute standard deviations (y) or go find computed standard deviations (n): ')
         histogram = input('Plot and save histograms (y / n): ')
@@ -268,9 +271,6 @@ class hilo:
                 hilo.plotHistogram(dataset, dev, newFolderPath)
 
             exptime, illumtype = dataset
-            if exptime == 40:
-                newFigName = '#ALLexcept40ms'
-                continue
 
             if illumtype is 'speckles':
                 xSpeckles.append(int(exptime))
@@ -279,17 +279,18 @@ class hilo:
                 xUniform.append(int(exptime))
                 yUniform.append(dev.getMean())
 
+        plt.figure()
         if curvefit == 'y':
-            xxSpeckles, yySpeckles, popt = hilo.getCurvefit(xSpeckles, ySpeckles)
-            plt.plot(xxSpeckles, yySpeckles, 'r:', linewidth=1, label='fit: a=%.1f, b=%.1f' % tuple(popt))
-            xxUniform, yyUniform, popt = hilo.getCurvefit(xUniform, yUniform)
-            plt.plot(xxUniform, yyUniform, 'b:', linewidth=1, label='fit: a=%.1f, b=%.1f' % tuple(popt))
+            xxSpeckles, yySpeckles, poptSpeckles = hilo.getCurvefit(xSpeckles, ySpeckles)
+            plt.plot(xxSpeckles, yySpeckles, 'r:', linewidth=1, label='fit: a=%.1f, b=%.1f, c=%.2f' % tuple(poptSpeckles))
+            xxUniform, yyUniform, poptUniform = hilo.getCurvefit(xUniform, yUniform)
+            plt.plot(xxUniform, yyUniform, 'b:', linewidth=1, label='fit: a=%.1f, b=%.1f, c=%.2f' % tuple(poptUniform))
 
         plt.plot(xSpeckles, ySpeckles, 'o', markersize=10, markerfacecolor='red', markeredgecolor='white',
                  label='Speckles')
         plt.plot(xUniform, yUniform, 'o', markersize=5, markerfacecolor='blue', markeredgecolor='white',
                  label='Uniform')
-        hilo.setPlotParams(xlabel='Exposure time [ms]', ylabel='Std dev (mean)', legendtitle='fit: $y = a / \sqrt{(x - b)}$')
+        hilo.setPlotParams(xlabel='Exposure time [ms]', ylabel='Std dev (mean)', legendtitle=r'fit: $y = \frac{a}{\sqrt{x - b}} + c$')
 
         hilo.saveFigure(newFolderPath=newFolderPath, othername='#ALL', show=True)
         print("... Has saved figure to '%s" % newFolderPath)
@@ -308,5 +309,5 @@ a = hilo()
 # for i in f:
 #     pass
 # g = a.PlotDistributionOfStdev()
-h = a.PlotStddevAgainstExpTime()
+h = a.PlotStdevAgainstExpTime()
 

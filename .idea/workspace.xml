@@ -4,7 +4,6 @@
     <list default="true" id="1d262995-6a13-4483-a4cc-a25ed65d131e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notimportant.py" beforeDir="false" afterPath="$PROJECT_DIR$/notimportant.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,7 +14,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/HiLo$hilo.coverage" NAME="hilo Coverage Results" MODIFIED="1529799303347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/HiLo$main.coverage" NAME="main Coverage Results" MODIFIED="1530202088873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HiLo$main.coverage" NAME="main Coverage Results" MODIFIED="1530289932399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/HiLo$SetPath.coverage" NAME="SetPath Coverage Results" MODIFIED="1530105836392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/HiLo$notimportant.coverage" NAME="notimportant Coverage Results" MODIFIED="1530198345139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/HiLo$IntensityAgainstTime.coverage" NAME="IntensityAgainstTime Coverage Results" MODIFIED="1529588540316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -51,8 +50,8 @@
       <file leaf-file-name="hilo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hilo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+            <state relative-caret-position="51">
+              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -63,23 +62,10 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="278" column="24" lean-forward="true" selection-start-line="278" selection-start-column="24" selection-end-line="278" selection-end-column="24" />
+            <state relative-caret-position="194">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#663#818#0" />
-                <element signature="e#968#1026#0" />
-                <element signature="e#1111#1289#0" />
-                <element signature="e#1409#1692#0" />
-                <element signature="e#1731#2472#0" />
-                <element signature="e#2522#2784#0" />
-                <element signature="e#2829#2971#0" />
-                <element signature="e#3017#3167#0" />
-                <element signature="e#3213#3345#0" />
-                <element signature="e#3396#4358#0" />
-                <element signature="e#4947#5138#0" />
-                <element signature="e#7378#7774#0" />
-                <element signature="e#7009#7243#0" />
               </folding>
             </state>
           </provider>
@@ -88,7 +74,7 @@
       <file leaf-file-name="notimportant.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notimportant.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
+            <state relative-caret-position="765">
               <caret line="46" column="7" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -100,7 +86,7 @@
       <file leaf-file-name="PlotStdevAgainstExposureTime.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/previousversions/PlotStdevAgainstExposureTime.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="34">
               <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="36" />
             </state>
           </provider>
@@ -120,6 +106,8 @@
       <find>exposure</find>
       <find>print</find>
       <find>flat</find>
+      <find>Stdev</find>
+      <find>Stddev</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -172,6 +160,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -188,7 +177,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -410,12 +398,12 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32946298" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3280116" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35389134" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38472834" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3280116" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1061828" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11021505" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.3297587" />
-      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.46774194" />
+      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.42137095" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3979442" />
@@ -428,27 +416,27 @@
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35095447" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10483871" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3280116" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32946298" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35095447" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3280116" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3979442" />
       <window_info anchor="right" id="Database" order="4" weight="0.3297587" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3280116" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32946298" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.3501344" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3280116" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,13 +447,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>175</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="5" />
     </breakpoint-manager>
   </component>
@@ -555,7 +536,7 @@
     <entry file="file://$PROJECT_DIR$/PlotHistogram.py" />
     <entry file="file://$PROJECT_DIR$/notimportant.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
+        <state relative-caret-position="765">
           <caret line="46" column="7" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -565,8 +546,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hilo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        <state relative-caret-position="51">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
@@ -575,30 +556,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/previousversions/PlotStdevAgainstExposureTime.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="34">
           <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="278" column="24" lean-forward="true" selection-start-line="278" selection-start-column="24" selection-end-line="278" selection-end-column="24" />
+        <state relative-caret-position="194">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#663#818#0" />
-            <element signature="e#968#1026#0" />
-            <element signature="e#1111#1289#0" />
-            <element signature="e#1409#1692#0" />
-            <element signature="e#1731#2472#0" />
-            <element signature="e#2522#2784#0" />
-            <element signature="e#2829#2971#0" />
-            <element signature="e#3017#3167#0" />
-            <element signature="e#3213#3345#0" />
-            <element signature="e#3396#4358#0" />
-            <element signature="e#4947#5138#0" />
-            <element signature="e#7378#7774#0" />
-            <element signature="e#7009#7243#0" />
           </folding>
         </state>
       </provider>

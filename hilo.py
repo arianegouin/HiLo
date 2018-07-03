@@ -35,7 +35,6 @@ class Folder:
     def hasFolder(self):
         for element in os.listdir(self.directory):
             if not '.' in element:
-                # print(element, 'is a folder')
                 return True
                 pass
 
@@ -43,7 +42,6 @@ class Folder:
         folders = []
         for element in os.listdir(self.directory):
             if '.' in element:
-                # print('extension', element)
                 continue
             folders.append(element)
         return folders
@@ -51,7 +49,6 @@ class Folder:
     def hasFile(self, extension):
         for element in os.listdir(self.directory):
             if '.%s' % extension in element:
-                # print(element, 'is a file')
                 return True
                 pass
 
@@ -73,7 +70,6 @@ class TiffImage:
         self.image.show()
 
     def returnArray(self):
-        # return numpy.array(self.image, dtype='float32')
         a = numpy.asarray(self.image, dtype='float32')
         return a
 
@@ -124,7 +120,7 @@ class TiffArray:
 
 class StackedArray:
 
-    def __init__(self, tiffarrays, *args):
+    def __init__(self, tiffarrays):
         self.stack = numpy.stack(tiffarrays, axis=0)
 
     def update(self):

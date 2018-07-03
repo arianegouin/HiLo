@@ -5,7 +5,7 @@ rcParams['font.size'] = 14
 from scipy.optimize import curve_fit
 
 
-class hilo:
+class analysis:
 
     def __init__(self):
         self.mainFolder = Folder(os.getcwd())
@@ -258,7 +258,6 @@ class hilo:
 
         xSpeckles = []
         ySpeckles = []
-
         xUniform = []
         yUniform = []
 
@@ -299,18 +298,10 @@ class hilo:
         print("... Has saved figure to '%s" % newFolderPath)
 
 
-a = hilo()
-# b = a.GetDataPaths()
-# for i in b:
-#     d = a.GetDataAsArrays(i)
-# d = a.PlotIntensityAgainstTime()
-# e = a.NormaliseAndSave()
-# for i in e:
-#     pass
-# f = a.GetNormalisedData()
-# f = a.GetStdevAndSave()
-# for i in f:
-#     pass
-# g = a.PlotDistributionOfStdev()
-h = a.PlotStdevAgainstExpTime()
+if __name__ == '__main__':
+    a = analysis()
+    if input('Plot intensity against time? (y / n): ') == 'y':
+        a.PlotIntensityAgainstTime()
+    if input('Plot standard deviation against exposure time? (y / n): ') == 'y':
+        a.PlotStdevAgainstExpTime()
 

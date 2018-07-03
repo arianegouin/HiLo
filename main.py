@@ -207,6 +207,7 @@ class hilo:
         plt.hist(dev.array, bins=100,
                  label='Exposure time = %sms \nIllumination = %s' % (exptime, illumtype))
         hilo.setPlotParams(xlabel='Std dev', ylabel='Number of pixels')
+        plt.xlim((0, 2))
         plt.title('Distribution (mean=%s)' % meandev)
 
         hilo.saveFigure(newFolderPath=newFolderPath, exptime=exptime, illumtype=illumtype, show=True)
@@ -279,18 +280,20 @@ class hilo:
                 xUniform.append(int(exptime))
                 yUniform.append(dev.getMean())
 
+        print('ySpeckles', ySpeckles)
         plt.figure()
         if curvefit == 'y':
             xxSpeckles, yySpeckles, poptSpeckles = hilo.getCurvefit(xSpeckles, ySpeckles)
-            plt.plot(xxSpeckles, yySpeckles, 'r:', linewidth=1, label='fit: a=%.1f, b=%.1f, c=%.2f' % tuple(poptSpeckles))
+            plt.plot(xxSpeckles, yySpeckles, 'r:', linewidth=1, label='fit: a=%.1f, b=%.1f, c=%.4f' % tuple(poptSpeckles))
             xxUniform, yyUniform, poptUniform = hilo.getCurvefit(xUniform, yUniform)
-            plt.plot(xxUniform, yyUniform, 'b:', linewidth=1, label='fit: a=%.1f, b=%.1f, c=%.2f' % tuple(poptUniform))
+            plt.plot(xxUniform, yyUniform, 'b:', linewidth=1, label='fit: a=%.1f, b=%.1f, c=%.4f' % tuple(poptUniform))
+
 
         plt.plot(xSpeckles, ySpeckles, 'o', markersize=10, markerfacecolor='red', markeredgecolor='white',
                  label='Speckles')
         plt.plot(xUniform, yUniform, 'o', markersize=5, markerfacecolor='blue', markeredgecolor='white',
                  label='Uniform')
-        hilo.setPlotParams(xlabel='Exposure time [ms]', ylabel='Std dev (mean)', legendtitle=r'fit: $y = \frac{a}{\sqrt{x - b}} + c$')
+        hilo.setPlotParams(xlabel='Gain', ylabel='Std dev (mean)', legendtitle=r'fit: $y = \frac{a}{\sqrt{x - b}} + c$')
 
         hilo.saveFigure(newFolderPath=newFolderPath, othername='#ALL', show=True)
         print("... Has saved figure to '%s" % newFolderPath)

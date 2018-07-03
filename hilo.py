@@ -157,9 +157,8 @@ class StackedArray:
 
     def getRelativeDeviationAlongZ(self):
         a = self.getDeviationAlongZ()
-        # b = self.getMeanAlongZ()
-        b = self.getMaxAlongZ()
-        condition = (b !=0)
+        b = self.getMeanAlongZ()
+        condition = (b > 10)
         c = numpy.divide(a, b, out=numpy.zeros_like(a), where=condition)
         return TiffArray(c)
 
